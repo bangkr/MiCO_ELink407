@@ -1,0 +1,126 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_dac.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_dac.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N   * @brief   This file provides firmware functions to manage the following 
+N  *          functionalities of the Digital-to-Analog Converter (DAC) peripheral: 
+N  *           - DAC channels configuration: trigger, output buffer, data format
+N  *           - DMA management      
+N  *           - Interrupts and flags management
+N  *
+N  *  @verbatim
+N  *    
+N  *          ===================================================================
+N  *                             DAC Peripheral features
+N  *          ===================================================================
+N  *          
+N  *          DAC Channels
+N  *          =============  
+N  *          The device integrates two 12-bit Digital Analog Converters that can 
+N  *          be used independently or simultaneously (dual mode):
+N  *            1- DAC channel1 with DAC_OUT1 (PA4) as output
+N  *            1- DAC channel2 with DAC_OUT2 (PA5) as output
+N  *
+N  *          DAC Triggers
+N  *          =============
+N  *          Digital to Analog conversion can be non-triggered using DAC_Trigger_None
+N  *          and DAC_OUT1/DAC_OUT2 is available once writing to DHRx register 
+N  *          using DAC_SetChannel1Data() / DAC_SetChannel2Data() functions.
+N  *   
+N  *         Digital to Analog conversion can be triggered by:
+N  *             1- External event: EXTI Line 9 (any GPIOx_Pin9) using DAC_Trigger_Ext_IT9.
+N  *                The used pin (GPIOx_Pin9) must be configured in input mode.
+N  *
+N  *             2- Timers TRGO: TIM2, TIM4, TIM5, TIM6, TIM7 and TIM8 
+N  *                (DAC_Trigger_T2_TRGO, DAC_Trigger_T4_TRGO...)
+N  *                The timer TRGO event should be selected using TIM_SelectOutputTrigger()
+N  *
+N  *             3- Software using DAC_Trigger_Software
+N  *
+N  *          DAC Buffer mode feature
+N  *          ========================  
+N  *          Each DAC channel integrates an output buffer that can be used to 
+N  *          reduce the output impedance, and to drive external loads directly
+N  *          without having to add an external operational amplifier.
+N  *          To enable, the output buffer use  
+N  *              DAC_InitStructure.DAC_OutputBuffer = DAC_OutputBuffer_Enable;
+N  *          
+N  *          Refer to the device datasheet for more details about output 
+N  *          impedance value with and without output buffer.
+N  *          
+N  *          DAC wave generation feature
+N  *          =============================      
+N  *          Both DAC channels can be used to generate
+N  *             1- Noise wave using DAC_WaveGeneration_Noise
+N  *             2- Triangle wave using DAC_WaveGeneration_Triangle
+N  *        
+N  *          Wave generation can be disabled using DAC_WaveGeneration_None
+N  *
+N  *          DAC data format
+N  *          ================   
+N  *          The DAC data format can be:
+N  *             1- 8-bit right alignment using DAC_Align_8b_R
+N  *             2- 12-bit left alignment using DAC_Align_12b_L
+N  *             3- 12-bit right alignment using DAC_Align_12b_R
+N  *
+N  *          DAC data value to voltage correspondence  
+N  *          ========================================  
+N  *          The analog output voltage on each DAC channel pin is determined
+N  *          by the following equation: 
+N  *          DAC_OUTx = VREF+ * DOR / 4095
+N  *          with  DOR is the Data Output Register
+N  *                VEF+ is the input voltage reference (refer to the device datasheet)
+N  *          e.g. To set DAC_OUT1 to 0.7V, use
+N  *            DAC_SetChannel1Data(DAC_Align_12b_R, 868);
+N  *          Assuming that VREF+ = 3.3V, DAC_OUT1 = (3.3 * 868) / 4095 = 0.7V
+N  *
+N  *          DMA requests 
+N  *          =============    
+N  *          A DMA1 request can be generated when an external trigger (but not
+N  *          a software trigger) occurs if DMA1 requests are enabled using
+N  *          DAC_DMACmd()
+N  *          DMA1 requests are mapped as following:
+N  *             1- DAC channel1 : mapped on DMA1 Stream5 channel7 which must be 
+N  *                               already configured
+N  *             2- DAC channel2 : mapped on DMA1 Stream6 channel7 which must be 
+N  *                               already configured
+N  *
+N  *          ===================================================================      
+N  *                              How to use this driver 
+N  *          ===================================================================          
+N  *            - DAC APB clock must be enabled to get write access to DAC
+N  *              registers using
+N  *              RCC_APB1PeriphClockCmd(RCC_APB1Periph_DAC, ENABLE)
+N  *            - Configure DAC_OUTx (DAC_OUT1: PA4, DAC_OUT2: PA5) in analog mode.
+N  *            - Configure the DAC channel using DAC_Init() function
+N  *            - Enable the DAC channel using DAC_Cmd() function
+N  * 
+N  *  @endverbatim
+N  *    
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_dac.c" 124 27 cannot open source input file "stm32f2xx_dac.h": No such file or directory
+N#include "stm32f2xx_dac.h"

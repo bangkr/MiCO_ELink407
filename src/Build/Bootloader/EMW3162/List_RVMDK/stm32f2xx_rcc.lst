@@ -1,0 +1,64 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_rcc.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_rcc.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N  * @brief   This file provides firmware functions to manage the following 
+N  *          functionalities of the Reset and clock control (RCC) peripheral:           
+N  *           - Internal/external clocks, PLL, CSS and MCO configuration
+N  *           - System, AHB and APB busses clocks configuration
+N  *           - Peripheral clocks configuration
+N  *           - Interrupts and flags management
+N  *
+N  *  @verbatim
+N  *               
+N  *          ===================================================================
+N  *                               RCC specific features
+N  *          ===================================================================
+N  *    
+N  *          After reset the device is running from Internal High Speed oscillator 
+N  *          (HSI 16MHz) with Flash 0 wait state, Flash prefetch buffer, D-Cache 
+N  *          and I-Cache are disabled, and all peripherals are off except internal
+N  *          SRAM, Flash and JTAG.
+N  *           - There is no prescaler on High speed (AHB) and Low speed (APB) busses;
+N  *             all peripherals mapped on these busses are running at HSI speed.
+N  *       	  - The clock for all peripherals is switched off, except the SRAM and FLASH.
+N  *           - All GPIOs are in input floating state, except the JTAG pins which
+N  *             are assigned to be used for debug purpose.
+N  *        
+N  *          Once the device started from reset, the user application has to:        
+N  *           - Configure the clock source to be used to drive the System clock
+N  *             (if the application needs higher frequency/performance)
+N  *           - Configure the System clock frequency and Flash settings  
+N  *           - Configure the AHB and APB busses prescalers
+N  *           - Enable the clock for the peripheral(s) to be used
+N  *           - Configure the clock source(s) for peripherals which clocks are not
+N  *             derived from the System clock (I2S, RTC, ADC, USB OTG FS/SDIO/RNG)      
+N  *                        
+N  *  @endverbatim
+N  *    
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_rcc.c" 62 27 cannot open source input file "stm32f2xx_rcc.h": No such file or directory
+N#include "stm32f2xx_rcc.h"

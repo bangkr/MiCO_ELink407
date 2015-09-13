@@ -1,0 +1,90 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_dcmi.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_dcmi.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N  * @brief   This file provides firmware functions to manage the following 
+N  *          functionalities of the DCMI peripheral:           
+N  *           - Initialization and Configuration
+N  *           - Image capture functions  
+N  *           - Interrupts and flags management
+N  *
+N  *  @verbatim  
+N  *  
+N  *        
+N  *          ===================================================================
+N  *                                 How to use this driver
+N  *          ===================================================================  
+N  *         
+N  *         The sequence below describes how to use this driver to capture image
+N  *         from a camera module connected to the DCMI Interface.
+N  *         This sequence does not take into account the configuration of the  
+N  *         camera module, which should be made before to configure and enable
+N  *         the DCMI to capture images.
+N  *           
+N  *          1. Enable the clock for the DCMI and associated GPIOs using the following functions:
+N  *                 RCC_AHB2PeriphClockCmd(RCC_AHB2Periph_DCMI, ENABLE);
+N  *                 RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOx, ENABLE);
+N  *
+N  *          2. DCMI pins configuration 
+N  *             - Connect the involved DCMI pins to AF13 using the following function 
+N  *                 GPIO_PinAFConfig(GPIOx, GPIO_PinSourcex, GPIO_AF_DCMI); 
+N  *             - Configure these DCMI pins in alternate function mode by calling the function
+N  *                 GPIO_Init();
+N  *    
+N  *          3. Declare a DCMI_InitTypeDef structure, for example:
+N  *                 DCMI_InitTypeDef  DCMI_InitStructure;
+N  *             and fill the DCMI_InitStructure variable with the allowed values
+N  *             of the structure member.
+N  *  
+N  *          4. Initialize the DCMI interface by calling the function
+N  *                 DCMI_Init(&DCMI_InitStructure); 
+N  *  
+N  *          5. Configure the DMA2_Stream1 channel1 to transfer Data from DCMI DR
+N  *             register to the destination memory buffer.
+N  *  
+N  *          6. Enable DCMI interface using the function
+N  *                 DCMI_Cmd(ENABLE);
+N  *                 
+N  *         7. Start the image capture using the function
+N  *                 DCMI_CaptureCmd(ENABLE);
+N  *                 
+N  *         8. At this stage the DCMI interface waits for the first start of frame,
+N  *            then a DMA request is generated continuously/once (depending on the
+N  *            mode used, Continuous/Snapshot) to transfer the received data into
+N  *            the destination memory. 
+N  *   
+N  *  @note  If you need to capture only a rectangular window from the received
+N  *         image, you have to use the DCMI_CROPConfig() function to configure 
+N  *         the coordinates and size of the window to be captured, then enable 
+N  *         the Crop feature using DCMI_CROPCmd(ENABLE);  
+N  *         In this case, the Crop configuration should be made before to enable
+N  *         and start the DCMI interface. 
+N  *        
+N  *  @endverbatim   
+N  *  
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_dcmi.c" 88 28 cannot open source input file "stm32f2xx_dcmi.h": No such file or directory
+N#include "stm32f2xx_dcmi.h"

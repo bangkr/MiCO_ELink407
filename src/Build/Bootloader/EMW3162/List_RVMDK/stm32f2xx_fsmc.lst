@@ -1,0 +1,37 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_fsmc.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_fsmc.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N * @brief    This file provides firmware functions to manage the following 
+N  *          functionalities of the FSMC peripheral:           
+N  *           - Interface with SRAM, PSRAM, NOR and OneNAND memories
+N  *           - Interface with NAND memories
+N  *           - Interface with 16-bit PC Card compatible memories  
+N  *           - Interrupts and flags management   
+N  *           
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_fsmc.c" 35 28 cannot open source input file "stm32f2xx_fsmc.h": No such file or directory
+N#include "stm32f2xx_fsmc.h"

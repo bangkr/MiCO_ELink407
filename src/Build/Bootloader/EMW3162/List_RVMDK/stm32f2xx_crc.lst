@@ -1,0 +1,31 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_crc.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_crc.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N  * @brief   This file provides all the CRC firmware functions.
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_crc.c" 29 27 cannot open source input file "stm32f2xx_crc.h": No such file or directory
+N#include "stm32f2xx_crc.h"

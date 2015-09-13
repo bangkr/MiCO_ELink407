@@ -1,0 +1,72 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\rtc.c"
+N/**
+N******************************************************************************
+N* @file    rtc.c 
+N* @author  William Xu
+N* @version V1.0.0
+N* @date    05-May-2014
+N* @brief   This file provide RTC functions used for time calculation in STM32 
+N*          stop mode.
+N******************************************************************************
+N*
+N*  The MIT License
+N*  Copyright (c) 2014 MXCHIP Inc.
+N*
+N*  Permission is hereby granted, free of charge, to any person obtaining a copy 
+N*  of this software and associated documentation files (the "Software"), to deal
+N*  in the Software without restriction, including without limitation the rights 
+N*  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+N*  copies of the Software, and to permit persons to whom the Software is furnished
+N*  to do so, subject to the following conditions:
+N*
+N*  The above copyright notice and this permission notice shall be included in
+N*  all copies or substantial portions of the Software.
+N*
+N*  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+N*  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+N*  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+N*  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+N*  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR 
+N*  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+N******************************************************************************
+N*/ 
+N
+N
+N
+N#include "stm32f2xx_platform.h"
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\stm32f2xx_platform.h" 1
+N/**
+N******************************************************************************
+N* @file    stm32f2xx_platform.h 
+N* @author  William Xu
+N* @version V1.0.0
+N* @date    05-May-2014
+N* @brief   This file provide all the headers of functions for stm32f2xx platform
+N******************************************************************************
+N*
+N*  The MIT License
+N*  Copyright (c) 2014 MXCHIP Inc.
+N*
+N*  Permission is hereby granted, free of charge, to any person obtaining a copy 
+N*  of this software and associated documentation files (the "Software"), to deal
+N*  in the Software without restriction, including without limitation the rights 
+N*  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+N*  copies of the Software, and to permit persons to whom the Software is furnished
+N*  to do so, subject to the following conditions:
+N*
+N*  The above copyright notice and this permission notice shall be included in
+N*  all copies or substantial portions of the Software.
+N*
+N*  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+N*  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+N*  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+N*  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+N*  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR 
+N*  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+N******************************************************************************
+N*/ 
+N
+N#pragma once
+N
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\stm32f2xx_platform.h" 34 23 cannot open source input file "stm32f2xx.h": No such file or directory
+N#include "stm32f2xx.h"

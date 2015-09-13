@@ -1,0 +1,2247 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1181123741</fileChecksum>
+  <configuration>
+    <name>Bootloader</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>HA</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICONTPClient.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\EMW3165\platform_common_config.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MICORTOS.h</file>
+      <file>$PROJ_DIR$\..\..\..\Library\MICOConfig.c</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoAlgorithm.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\EasyLink\EasyLink.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOMfgtest.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\EMW3165\platform.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOConfigServer.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\IAR\stdio_IAR.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOEntrance.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOCli.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOParaStorage.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\SoftAP\EasyLinkSoftAP.c</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoPlatform.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\EMW3165\platform.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\crt0_IAR.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOSystemMonitor.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOConfigMenu.c</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoWlan.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICONotificationCenter.c</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoSocket.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\WPS\WPS.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dcmi.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_pwr.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_can.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_sdio.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dma.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_adc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_aes.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_exti.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\EMW1062_Driver\read_wifi_firmware.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dbgmcu.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_md5.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\misc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_crc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_des.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Drivers\spi_flash\spi_flash.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\EMW1062_Driver\SDIO\wlan_bus.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_tdes.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\EMW1062_Driver\wlan_platform.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_sha1.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fsmc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_i2c.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Drivers\spi_flash\EMW3165.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dac.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_iwdg.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_tokener.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_util.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\printbuf.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\sha1.c</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverFlash.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_object.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\hkdf.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rng.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\usha.c</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverAdc.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\linkhash.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\hmac.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\sha384-512.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\sha224-256.c</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverGpio.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\arraylist.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\debug.c</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverRtc.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverSpi.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverPwm.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MICO.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverI2c.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverMFiAuth.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverRng.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverWdg.h</file>
+      <file>$PROJ_DIR$\..\..\..\include\MicoDrivers\MicoDriverUart.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rtc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.HA\MICOConfigDelegate.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.HA\RemoteTcpClient.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.HA\UartRecv.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.HA\HaProtocol.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\Curve25519\curve25519-donna.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.HA\MICOBonjour.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.HA\MICOAppEntrance.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.HA\LocalTcpServer.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\hardfault.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverI2c.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_tim.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spi.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\gpio_irq.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\system_stm32f4xx.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverRng.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverPwm.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverRtc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverWdg.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\startup_stm32f411xe_IAR.s</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\rtc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverAdc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\stm32f4xx_platform.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\HTTPUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\MDNSUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\SHAUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\SecurityUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverSpi.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverUart.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverFlash.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverGpio.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\RingBufferUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_syscfg.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_wwdg.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\AESUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\TimeUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\URLUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\TLVUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\StringUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\SocketUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\SoftAP\EasyLinkSoftAP.h</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\URLUtils.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\WPS\WPS.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOCli.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\time.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\WAC\MFi_WAC.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\Airkiss\Airkiss.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOSystemMonitor.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\errno.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\sha-private.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\sha.h</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\HTTPUtils.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cmFunc.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cm4.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\stm32f4xx.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\stm32f4xx_platform.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\system_stm32f4xx.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\stm32f4xx_conf.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\misc.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\include\PlatformLogging.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cmInstr.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cmSimd.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\EasyLink\EasyLink.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOConfigMenu.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\StringUtils.h</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\MDNSUtils.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\config.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\Curve25519\curve25519-donna.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\inttypes.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_inttypes.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_object_private.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\linkhash.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\json_tokener.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\sha1.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\json_object.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\curve25519-donna.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\RemoteTcpClient.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\printbuf.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\json_util.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\hkdf.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\sha384-512.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\usha.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\EasyLink.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\WPS.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\EasyLinkSoftAP.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\hmac.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\sha224-256.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOConfig.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOConfigServer.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_cryp_des.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOSystemMonitor.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOEntrance.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\spi_flash.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_cryp_tdes.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stdio_IAR.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\wlan_bus.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_can.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOMfgtest.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\misc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_dac.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_cryp.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_hash_md5.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOParaStorage.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\EMW3165.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\read_wifi_firmware.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_adc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\gpio_irq.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_dbgmcu.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_cryp_aes.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\platform.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\crt0_IAR.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICONTPClient.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOCli.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICONotificationCenter.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOConfigMenu.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_crc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\wlan_platform.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_hash.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_rcc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_sdio.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_usart.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_spi.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverAdc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_hash_sha1.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_gpio.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_rtc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverFlash.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_dma.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_fsmc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_iwdg.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_rng.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_syscfg.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_wwdg.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverGpio.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\AESUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\system_stm32f4xx.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\hardfault.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_i2c.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\rtc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverPwm.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_pwr.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_tim.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverI2c.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_exti.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_flash.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_dcmi.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\TLVUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\LocalTcpServer.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOBonjour.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MDNSUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\URLUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\RemoteTcpClient.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\UartRecv.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\arraylist.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\debug.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\startup_stm32f411xe_IAR.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOConfigDelegate.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\json_object.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\StringUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverRtc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\HTTPUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\RingBufferUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\HaProtocol.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\json_tokener.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\curve25519-donna.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\linkhash.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\SocketUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverRng.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\json_util.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverWdg.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\SHAUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\SecurityUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverUart.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOAppEntrance.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverSpi.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_platform.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\TimeUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\hkdf.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\sha384-512.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\usha.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\printbuf.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\hmac.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOConfig.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOCli.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\EasyLink.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOConfigServer.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICONotificationCenter.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOSystemMonitor.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stdio_IAR.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\EasyLinkSoftAP.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOEntrance.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\spi_flash.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\wlan_bus.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICONTPClient.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOMfgtest.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\read_wifi_firmware.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_adc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\sha224-256.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOConfigMenu.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\crt0_IAR.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\wlan_platform.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\platform.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\WPS.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\sha1.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOParaStorage.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\EMW3165.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\misc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_flash.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_cryp_aes.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_cryp_tdes.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_fsmc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_hash.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_hash_md5.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_cryp_des.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_exti.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_dma.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_can.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_crc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_dbgmcu.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_dac.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_gpio.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_cryp.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_dcmi.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_rng.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_syscfg.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_rcc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_wwdg.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_rtc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\system_stm32f4xx.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\gpio_irq.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\hardfault.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverAdc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverFlash.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_i2c.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_iwdg.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_pwr.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_hash_sha1.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_spi.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_tim.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_usart.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_sdio.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverI2c.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\rtc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverGpio.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MDNSUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\AESUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\StringUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverPwm.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Exe\EMW3165.bin</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\SHAUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverSpi.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\SecurityUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\HTTPUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\RingBufferUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverRng.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\TimeUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\SocketUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\TLVUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Exe\EMW3165.out</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\URLUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\EMW3165.pbd</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\stm32f4xx_platform.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverUart.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverWdg.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MicoDriverRtc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\platform_assert.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtls.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocalelist.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\printbuf.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICONotificationCenter.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.HA\MICOAppDefine.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICODefine.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\SocketUtils.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\Debug.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\arraylist.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xmtx.h</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\Common.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_util.h</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\RingBufferUtils.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale_lconv.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_tokener.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale.h</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.HA\HaProtocol.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\linkhash.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.HA\MicoDefaults.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_object.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\debug.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\locale.h</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\bits.h</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\HaProtocol.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOAppEntrance.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\LocalTcpServer.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOConfigDelegate.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\UartRecv.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\arraylist.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\MICOBonjour.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Obj\debug.o</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Drivers\spi_flash\spi_flash_internal.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Drivers\spi_flash\spi_flash.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\gpio_irq.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Drivers\spi_flash\spi_flash_platform_interface.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yfuns.h</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\crt0.h</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICONTPClient.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 301</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 219</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 375 399 382 77 415 389 395 123 396 397 391 387 373 383 4 75 15 390 388 376 409 404 414 384 73 398 385 381 14 392 386 403 400 413 377 378 374 379 394 401 410 72 19 71 76 74 406 402 411 2 1 408 21 66 70 69 61 56 412 393 380 407</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\MICOConfig.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 290</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 195</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 386 382 377 384 413 409 375 376 391 403 400 387 378 379 388 396 389 397 374 401 395 404 414 394 410</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\EasyLink\EasyLink.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 292</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 190</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 382 410 389 2 373 387 375 383 380 395 381 130 14 396 397 391 374 1 76 15 120 385 172 390 119 392 21 388 376 409 394 71 74 393 72 169 19 4 384 386 403 400 413 377 378 379 77 73 75 399 412 411 407 404 414 401 66 70 69 61 56 408 415 406 398 402 171</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOMfgtest.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 302</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 205</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 395 378 387 413 76 391 2 410 382 15 385 71 74 384 379 380 381 386 403 400 77 73 75 409 72 4 393 14 1 383 397 66 70 69 61 56 375 388 396 376 389 377 374 394 399 19 412 411 407 392 123 404 414 401 408 373 21 415 406 398 402</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\EMW3165\platform.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 309</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 217</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 15 77 395 138 410 131 133 376 409 75 382 386 134 136 137 413 391 73 135 132 139 143 141 14 387 403 400 71 76 74 384 404 414 401 146 142 147 140 144 145 148 149 150 396 1 151 377 397 66 70 69 61 56 375 388 389 378 374 379 394 399 152 154 153 156 157 158 159 160 155 162 161 163 165 164 166 167 392 373 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOConfigServer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 293</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 196</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 382 77 395 15 377 399 384 400 385 381 386 403 75 393 391 72 19 2 413 378 379 73 383 380 388 390 1 130 172 392 21 14 410 373 375 396 376 389 397 387 374 394 71 76 74 412 411 407 409 404 414 401 66 70 69 61 56 408 415 406 398 402 120 171</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\IAR\stdio_IAR.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 296</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 202</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 15 394 391 386 382 395 1 397 70 428 14 387 66 384 404 414 403 400 413 410 77 71 73 375 388 396 376 389 377 409 378 374 379 401 399 69 76 61 75 56 74</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOEntrance.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 298</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 199</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 15 66 391 392 387 388 382 402 123 397 56 395 385 69 376 377 401 383 122 121 70 61 375 396 389 386 409 404 414 384 373 21 406 411 14 1 381 126 169 119 124 172 125 403 400 413 410 77 71 73 76 75 74 408 2 415 398 378 374 379 394 399 72 19 4 412 393 380 407 171</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOCli.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 291</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 220</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74 386 395 15 403 4 384 400 382 377 391 378 379 71 72 393 122 19 2 413 374 394 387 1 410 76 380 385 171 392 21 14 373 375 388 396 376 389 397 409 404 414 77 73 75 399 383 412 411 407 401 66 70 69 61 56 408 415 406 398 402</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOParaStorage.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 312</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 210</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 395 394 391 413 382 383 374 387 2 73 15 398 1 72 384 386 403 400 377 378 379 4 77 75 399 415 14 392 408 375 388 396 376 389 397 409 404 414 19 410 71 76 74 406 402 411 385 401 373 21 66 70 69 61 56 412 393 380 407</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\SoftAP\EasyLinkSoftAP.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 297</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 192</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 76 391 413 172 19 374 1 395 15 120 2 387 410 383 380 72 14 390 4 384 386 403 400 382 377 394 71 74 393 381 130 173 119 392 21 373 375 388 396 376 389 397 409 378 379 77 73 75 399 385 412 411 407 404 414 401 66 70 69 61 56 408 415 406 398 402 171</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\crt0_IAR.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 307</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 218</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 429 1 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOSystemMonitor.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 295</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 198</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 386 395 15 403 410 4 384 400 382 377 391 378 379 1 76 408 398 14 19 2 413 374 394 387 71 74 415 126 392 21 373 375 388 396 376 389 397 409 404 414 77 73 75 399 406 402 411 72 401 66 70 69 61 56 385 383 412 393 380 407</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOConfigMenu.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 306</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 222</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 391 1 374 411 387 380 413 382 394 412 170 15 384 386 403 400 377 378 379 393 408 410 373 395 375 388 396 376 389 397 409 404 414 401 415 406 398 402 407 392</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICONotificationCenter.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 294</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 221</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 414 395 376 15 404 384 408 387 409 381 388 382 391 410 2 69 411 392 375 396 389 397 401 14 66 56 412 407 385 72 383 386 403 400 413 377 378 374 379 373 21 70 61 393 380 394 1 19 4 77 71 73 76 75 74 399 415 406 398 402</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\WPS\WPS.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 310</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 191</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 391 394 15 413 19 395 74 130 2 382 71 393 14 119 4 384 386 403 400 377 374 387 1 410 76 383 380 120 381 172 121 392 21 373 375 388 396 376 389 397 409 378 379 77 73 75 399 385 72 412 411 407 404 414 401 66 70 69 61 56 408 415 406 398 402 171</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dcmi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 330</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 253</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 391 149 159 131 146 375 140 413 145 147 144 148 150 136 163 152 154 386 403 400 139 138 143 134 141 133 135 142 132 382 397 153 156 157 158 160 155 162 161 165 164 166 167</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_pwr.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 343</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 248</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 167 132 136 160 146 135 382 397 156 163 134 158 162 164 142 153 157 159 155 161 165 166 375 152 154 391 386 403 400 413 131 147 139 140 138 144 143 145 148 141 149 133 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_can.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 324</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 204</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 143 403 163 386 139 141 147 146 152 154 400 131 138 134 133 136 375 391 413 140 144 145 148 149 150 135 142 132 382 397 153 156 157 158 159 160 155 162 161 165 164 166 167</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_sdio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 348</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 227</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 154 163 152 134 136 146 400 131 138 133 386 403 139 143 141 375 391 413 147 140 144 145 148 149 150 135 142 132 382 397 153 156 157 158 159 160 155 162 161 165 164 166 167</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dma.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 323</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 235</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 382 164 163 136 158 162 135 132 397 156 160 167 138 146 142 153 157 159 155 161 165 166 375 152 154 391 386 403 400 413 131 147 139 140 144 143 145 134 148 141 149 133 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_adc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 304</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 213</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 400 136 138 156 146 131 133 152 154 134 163 386 403 139 143 141 375 391 413 147 140 144 145 148 149 150 135 142 132 382 397 153 157 158 159 160 155 162 161 165 164 166 167</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_aes.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 316</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 216</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 382 164 158 162 139 135 132 397 156 160 163 167 136 146 142 153 157 159 155 161 165 166 375 152 154 391 386 403 400 413 131 147 140 138 144 143 145 134 148 141 149 133 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_exti.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 322</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 251</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 134 152 136 154 400 131 138 133 386 403 139 143 141 160 146 375 391 413 147 140 144 145 148 149 150 135 142 132 382 397 153 156 157 158 159 155 162 161 163 165 164 166 167</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\EMW1062_Driver\read_wifi_firmware.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 303</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 212</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 382 69 394 391 395 15 384 397 386 66 14 375 388 396 376 389 387 404 414 70 61 1 403 400 413 377 409 378 374 379 401 410 77 71 73 76 399 75 56 74</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dbgmcu.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 326</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 215</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 153 159 166 142 382 161 157 155 165 136 146 135 132 397 156 158 160 162 163 164 167 140 375 152 154 391 386 403 400 413 131 147 139 138 144 143 145 134 148 141 149 133 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 328</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 232</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 141 136 386 139 403 143 163 152 154 400 131 138 134 133 162 146 375 391 413 147 140 144 145 148 149 150 135 142 132 382 397 153 156 157 158 159 160 155 161 165 164 166 167</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_md5.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 320</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 209</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 136 157 165 155 143 142 153 382 159 161 166 146 135 132 397 156 158 160 162 163 164 167 375 152 154 391 386 403 400 413 131 147 139 140 138 144 145 134 148 141 149 133 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\misc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 314</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 206</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 157 165 136 146 155 142 153 382 159 161 166 135 132 397 156 158 160 162 163 164 167 150 375 152 154 391 386 403 400 413 131 147 139 140 138 144 143 145 134 148 141 149 133</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_crc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 325</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 223</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 139 386 141 136 403 143 146 152 154 400 131 138 134 133 375 391 413 147 140 144 145 148 149 150 157 135 142 132 382 397 153 156 158 159 160 155 162 161 163 165 164 166 167</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_des.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 321</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 197</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 136 143 403 386 139 141 152 154 400 131 138 134 133 375 391 413 147 140 144 145 148 149 150 146 135 142 132 382 397 153 156 157 158 159 160 155 162 161 163 165 164 166 167</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 315</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 252</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 166 144 153 159 136 142 382 161 146 157 155 165 135 132 397 156 158 160 162 163 164 167 375 152 154 391 386 403 400 413 131 147 139 140 138 143 145 134 148 141 149 133 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Drivers\spi_flash\spi_flash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 299</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 200</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 382 427 15 425 397 391 378 379 424 376 395 384 387 374 394 2 1 151 392 375 388 396 389 386 403 400 413 377 409 404 414 401 410 373</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\EMW1062_Driver\SDIO\wlan_bus.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 300</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 203</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 395 382 145 131 140 149 136 2 137 397 391 378 379 146 142 147 144 148 150 73 15 410 376 384 387 374 394 135 132 139 138 143 134 141 133 77 75 1 399 426 151 375 388 396 389 386 403 400 413 377 409 404 414 401 152 154 153 156 157 158 159 160 155 162 161 163 165 164 166 167 71 76 74 392 373 14 66 70 69 61 56</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 329</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 208</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 382 164 158 162 135 132 397 156 160 163 167 136 139 146 142 153 157 159 155 161 165 166 375 152 154 391 386 403 400 413 131 147 140 138 144 143 145 134 148 141 149 133 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_tdes.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 317</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 201</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 136 143 403 386 139 141 152 154 400 131 138 134 133 375 391 413 147 140 144 145 148 149 150 146 135 142 132 382 397 153 156 157 158 159 160 155 162 161 163 165 164 166 167</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 333</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 226</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 136 165 157 155 146 142 153 382 159 161 166 163 135 132 397 156 158 160 162 164 167 375 152 154 391 386 403 400 413 131 147 139 140 138 144 143 145 134 148 141 149 133 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\EMW1062_Driver\wlan_platform.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 308</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 224</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 155 391 154 136 382 403 152 69 388 386 157 165 395 409 15 1 400 153 159 161 166 375 66 56 376 404 414 384 426 413 156 158 160 162 163 164 167 14 70 61 396 389 387 401 397 146 135 142 132 131 147 139 140 138 144 143 145 134 148 141 149 133 150 410 77 71 73 76 75 74 377 399 378 374 379 394</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_sha1.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 344</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 231</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 136 157 165 155 143 142 153 382 159 161 166 146 135 132 397 156 158 160 162 163 164 167 375 152 154 391 386 403 400 413 131 147 139 140 138 144 145 134 148 141 149 133 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fsmc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 318</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 236</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 382 164 158 136 162 155 135 132 397 156 160 163 167 146 142 153 157 159 161 165 166 375 152 154 391 386 403 400 413 131 147 139 140 138 144 143 145 134 148 141 149 133 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_i2c.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 341</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 245</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 136 142 382 161 153 159 166 163 146 157 155 165 145 135 132 397 156 158 160 162 164 167 375 152 154 391 386 403 400 413 131 147 139 140 138 144 143 134 148 141 149 133 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Drivers\spi_flash\EMW3165.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 313</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 211</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 131 133 400 138 152 154 134 136 146 386 403 139 143 141 375 391 413 147 140 144 145 148 149 150 427 135 142 132 382 397 153 156 157 158 159 160 155 162 161 163 165 164 166 167</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dac.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 327</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 207</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 136 149 391 131 375 140 413 145 147 144 148 150 158 163 146 152 154 386 403 400 139 138 143 134 141 133 135 142 132 382 397 153 156 157 159 160 155 162 161 165 164 166 167</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 319</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 225</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 136 157 165 155 143 142 153 382 159 161 166 163 146 135 132 397 156 158 160 162 164 167 375 152 154 391 386 403 400 413 131 147 139 140 138 144 145 134 148 141 149 133 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_iwdg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 342</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 237</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 131 133 400 138 152 154 134 136 146 386 403 139 143 141 375 391 413 147 140 144 145 148 149 150 161 135 142 132 382 397 153 156 157 158 159 160 155 162 163 165 164 166 167</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\json_tokener.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 271</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 180</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 391 387 414 176 404 384 382 393 402 401 396 389 411 172 377 397 386 375 174 407 376 168 415 412 380 177 398 403 400 413 378 374 379 394 409 395 388 171</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\json_util.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 276</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 186</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 382 415 400 391 168 411 380 384 127 398 387 386 403 176 396 407 376 389 412 177 402 377 413 409 404 414 401 375 174 397 378 374 379 394</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\printbuf.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 288</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 185</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 380 387 409 384 415 391 382 396 376 171 412 377 397 174 386 403 400 413</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\sha1.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 311</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 181</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 375 128 391 413 129 382 386 403 400 397</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\json_object.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 265</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 182</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 398 411 387 412 382 386 375 374 391 384 393 377 397 394 174 409 176 395 378 379 396 407 376 380 406 177 178 172 403 400 413 171 388 389 404 414 401</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\hkdf.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 285</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 187</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 382 384 409 391 376 397 387 386 129 375 403 400 413</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rng.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 331</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 238</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 382 162 146 163 136 158 164 135 132 397 156 160 167 148 142 153 157 159 155 161 165 166 375 152 154 391 386 403 400 413 131 147 139 140 138 144 143 145 134 141 149 133 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\usha.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 287</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 189</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 391 413 375 382 386 403 400 129 397</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\linkhash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 273</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 179</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 382 391 407 413 384 406 376 171 168 387 386 403 400 396 377 397 409</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\hmac.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 289</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 193</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 391 382 413 375 386 403 400 129 397</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\sha384-512.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 286</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 188</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 128 129 391 413 375 386 403 400 382 397</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\sha224-256.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 305</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 194</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 382 129 413 391 128 375 386 403 400 397</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\arraylist.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 261</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 421</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 387 382 415 384 397 391 409 376 393 386 174 403 400 413</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\debug.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 262</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 423</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 403 391 382 384 377 400 396 376 387 386 413 174 171 397 409 412</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rtc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 335</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 233</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 161 136 142 382 153 159 166 146 157 155 165 135 132 397 156 158 160 162 163 164 167 375 152 154 391 386 403 400 413 131 147 139 140 138 144 143 145 134 148 141 149 133 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 366</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.HA\MICOConfigDelegate.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 264</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 419</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 385 395 169 391 14 56 407 382 405 413 15 408 66 412 392 383 384 386 403 400 377 378 379 2 69 411 170 1 172 375 388 396 376 389 397 387 409 404 374 394 21 70 61 393 380 414 401 410 373 72 19 4 77 71 73 76 75 74 399 415 406 398 402 171</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.HA\RemoteTcpClient.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 259</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 184</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 391 395 15 382 2 73 398 387 413 394 381 72 374 405 383 384 386 403 400 377 378 379 1 4 77 75 399 415 390 392 408 375 388 396 376 389 397 409 404 414 19 410 71 76 74 406 402 411 385 401 373 21 14 66 70 69 61 56 412 393 380 407</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.HA\UartRecv.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 260</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 420</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 383 395 386 71 406 382 403 15 384 400 377 391 378 379 74 411 405 72 413 374 394 387 19 410 76 402 385 14 381 392 408 375 388 396 376 389 397 409 404 414 2 1 4 77 73 75 399 415 398 401 373 21 66 70 69 61 56 412 393 380 407</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.HA\HaProtocol.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 270</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 416</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 387 381 376 374 391 392 70 395 15 393 390 388 382 394 385 383 14 375 396 389 397 377 378 379 373 21 61 380 405 1 384 386 403 400 413 409 404 414 401 410 408 2 66 69 56 412 411 407 72 19 4 77 71 73 76 75 74 399 415 406 398 402</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\Curve25519\curve25519-donna.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 272</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 183</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 403 382 175 376 387 386 400 413 391 409 384 375 397</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.HA\MICOBonjour.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 256</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 422</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 412 374 375 382 76 2 373 389 391 1 395 15 392 172 14 396 397 387 410 407 72 381 21 388 376 409 404 394 71 74 411 385 173 19 4 384 386 403 400 413 377 378 379 77 73 75 399 383 393 380 414 401 66 70 69 61 56 408 415 406 398 402 171</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.HA\MICOAppEntrance.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 281</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 417</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 397 395 14 382 391 387 396 379 390 2 373 375 389 378 73 15 383 380 392 21 410 388 376 409 404 77 75 399 393 385 172 405 19 4 384 386 403 400 413 377 374 394 1 71 76 74 72 412 411 407 414 401 66 70 69 61 56 408 415 406 398 402 171</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.HA\LocalTcpServer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 255</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 418</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 395 377 379 382 391 71 406 384 400 378 14 383 386 403 74 15 411 405 72 413 374 394 387 19 410 76 402 385 390 392 408 375 388 396 376 389 397 409 404 414 2 1 4 77 73 75 399 415 398 401 373 21 66 70 69 61 56 412 393 380 407</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\hardfault.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 338</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 244</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 142 397 140 15 382 131 149 70 377 391 146 145 395 14 147 144 148 150 136 388 387 2 137 135 132 139 138 143 134 141 133 376 61 410 1 386 403 400 413 375 152 154 153 156 157 158 159 160 155 162 161 163 165 164 166 167 396 389 409 404 414 384 401 66 69 56 378 374 379 394 77 71 73 76 75 74 399</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverI2c.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 349</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 250</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 347</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 228</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 136 160 132 167 146 135 382 397 156 163 133 158 162 164 142 153 157 159 155 161 165 166 375 152 154 391 386 403 400 413 131 147 139 140 138 144 143 145 134 148 141 149 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_tim.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 346</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 249</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 136 161 142 382 163 153 159 166 157 155 165 146 135 132 397 156 158 160 162 164 167 375 152 154 391 386 403 400 413 131 147 139 140 138 144 143 145 134 148 141 149 133 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 345</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 229</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 150 131 136 375 144 147 148 164 391 413 140 145 149 163 146 152 154 386 403 400 139 138 143 134 141 133 135 142 132 382 397 153 156 157 158 159 160 155 162 161 165 166 167</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\gpio_irq.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 337</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 214</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 153 391 400 159 136 166 73 387 395 376 14 382 161 384 386 403 152 154 157 155 165 77 75 15 426 375 413 156 158 160 162 163 164 167 410 71 76 74 397 146 135 142 132 131 147 139 140 138 144 143 145 134 148 141 149 133 150 66 70 69 61 56 377 409 404 414 401 388 396 389 378 374 379 394 1 399</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\system_stm32f4xx.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 336</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 243</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 131 133 400 138 152 154 134 136 146 386 403 139 143 141 375 391 413 147 140 144 145 148 149 150 135 142 132 382 397 153 156 157 158 159 160 155 162 161 163 165 164 166 167</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverRng.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 362</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 275</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverPwm.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 355</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 247</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverRtc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 372</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 267</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverWdg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 371</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 277</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\startup_stm32f411xe_IAR.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 263</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\rtc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 350</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 246</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverAdc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 339</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 230</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 389 61 403 15 162 375 386 395 158 164 136 137 70 396 400 382 377 391 378 379 156 160 163 167 410 151 66 69 56 388 376 413 374 394 387 1 399 152 154 153 157 159 155 161 165 166 2 77 71 73 76 75 74 384 397 409 404 414 401 146 135 142 132 131 147 139 140 138 144 143 145 134 148 141 149 133 150 392 373 14</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\stm32f4xx_platform.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 369</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 283</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\HTTPUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 360</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 268</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\MDNSUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 352</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 257</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\SHAUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 357</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 278</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\SecurityUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 359</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 279</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverSpi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 358</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 282</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverUart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 370</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 280</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverFlash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 340</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 234</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\MicoDriverGpio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 351</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 241</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\RingBufferUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 361</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 269</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_syscfg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 332</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 239</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 165 157 146 155 136 142 153 382 159 161 166 163 135 132 397 156 158 160 162 164 167 149 375 152 154 391 386 403 400 413 131 147 139 140 138 144 143 145 134 148 141 133 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M4\STM32F4xx\STM32F4xx_Drv\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_wwdg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 334</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 240</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 136 161 142 382 153 159 166 167 146 157 155 165 163 135 132 397 156 158 160 162 164 375 152 154 391 386 403 400 413 131 147 139 140 138 144 143 145 134 148 141 149 133 150</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\AESUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 353</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 242</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\TimeUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 363</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 284</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\URLUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 367</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 258</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\TLVUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 365</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 254</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\StringUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 354</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 266</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\SocketUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 364</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 274</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Build\EMW3165_stm32f4xx\IAR\HA\Exe\EMW3165.out</name>
+      <outputs>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 356</file>
+        </tool>
+      </outputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>SPP</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>WECHAT</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

@@ -1,0 +1,157 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_sdio.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_sdio.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N  * @brief   This file provides firmware functions to manage the following 
+N  *          functionalities of the Secure digital input/output interface (SDIO) 
+N  *          peripheral:
+N  *           - Initialization and Configuration
+N  *           - Command path state machine (CPSM) management
+N  *           - Data path state machine (DPSM) management
+N  *           - SDIO IO Cards mode management
+N  *           - CE-ATA mode management
+N  *           - DMA transfers management
+N  *           - Interrupts and flags management
+N  *
+N  *  @verbatim
+N  *
+N  *
+N  *          ===================================================================
+N  *                                 How to use this driver
+N  *          ===================================================================
+N  *          1. The SDIO clock (SDIOCLK = 48 MHz) is coming from a specific output
+N  *             of PLL (PLL48CLK). Before to start working with SDIO peripheral
+N  *             make sure that the PLL is well configured.
+N  *          The SDIO peripheral uses two clock signals:
+N  *              - SDIO adapter clock (SDIOCLK = 48 MHz)
+N  *              - APB2 bus clock (PCLK2)
+N  *          PCLK2 and SDIO_CK clock frequencies must respect the following condition:
+N  *                   Frequenc(PCLK2) >= (3 / 8 x Frequency(SDIO_CK))
+N  *
+N  *          2. Enable peripheral clock using RCC_APB2PeriphClockCmd(RCC_APB2Periph_SDIO, ENABLE).
+N  *
+N  *          3.  According to the SDIO mode, enable the GPIO clocks using 
+N  *              RCC_AHB1PeriphClockCmd() function. 
+N  *              The I/O can be one of the following configurations:
+N  *                 - 1-bit data length: SDIO_CMD, SDIO_CK and D0.
+N  *                 - 4-bit data length: SDIO_CMD, SDIO_CK and D[3:0].
+N  *                 - 8-bit data length: SDIO_CMD, SDIO_CK and D[7:0].      
+N  *
+N  *          4. Peripheral's alternate function: 
+N  *                 - Connect the pin to the desired peripherals' Alternate 
+N  *                   Function (AF) using GPIO_PinAFConfig() function
+N  *                 - Configure the desired pin in alternate function by:
+N  *                   GPIO_InitStruct->GPIO_Mode = GPIO_Mode_AF
+N  *                 - Select the type, pull-up/pull-down and output speed via 
+N  *                   GPIO_PuPd, GPIO_OType and GPIO_Speed members
+N  *                 - Call GPIO_Init() function
+N  *
+N  *          5. Program the Clock Edge, Clock Bypass, Clock Power Save, Bus Wide, 
+N  *             hardware, flow control and the Clock Divider using the SDIO_Init()
+N  *             function.
+N  *
+N  *          6. Enable the Power ON State using the SDIO_SetPowerState(SDIO_PowerState_ON) 
+N  *             function.
+N  *              
+N  *          7. Enable the clock using the SDIO_ClockCmd() function.
+N  *
+N  *          8. Enable the NVIC and the corresponding interrupt using the function 
+N  *             SDIO_ITConfig() if you need to use interrupt mode. 
+N  *
+N  *          9. When using the DMA mode 
+N  *                   - Configure the DMA using DMA_Init() function
+N  *                   - Active the needed channel Request using SDIO_DMACmd() function
+N  *
+N  *          10. Enable the DMA using the DMA_Cmd() function, when using DMA mode. 
+N  *
+N  *          11. To control the CPSM (Command Path State Machine) and send 
+N  *              commands to the card use the SDIO_SendCommand(), 
+N  *              SDIO_GetCommandResponse() and SDIO_GetResponse() functions.     
+N  *              First, user has to fill the command structure (pointer to
+N  *              SDIO_CmdInitTypeDef) according to the selected command to be sent.
+N  *                 The parameters that should be filled are:
+N  *                   - Command Argument
+N  *                   - Command Index
+N  *                   - Command Response type
+N  *                   - Command Wait
+N  *                   - CPSM Status (Enable or Disable)
+N  *
+N  *              To check if the command is well received, read the SDIO_CMDRESP
+N  *              register using the SDIO_GetCommandResponse().
+N  *              The SDIO responses registers (SDIO_RESP1 to SDIO_RESP2), use the
+N  *              SDIO_GetResponse() function.
+N  *
+N  *          12. To control the DPSM (Data Path State Machine) and send/receive 
+N  *              data to/from the card use the SDIO_DataConfig(), SDIO_GetDataCounter(), 
+N  *              SDIO_ReadData(), SDIO_WriteData() and SDIO_GetFIFOCount() functions.
+N  *
+N  *              Read Operations
+N  *              ---------------
+N  *              a) First, user has to fill the data structure (pointer to
+N  *                 SDIO_DataInitTypeDef) according to the selected data type to
+N  *                 be received.
+N  *                 The parameters that should be filled are:
+N  *                   - Data TimeOut
+N  *                   - Data Length
+N  *                   - Data Block size
+N  *                   - Data Transfer direction: should be from card (To SDIO)
+N  *                   - Data Transfer mode
+N  *                   - DPSM Status (Enable or Disable)
+N  *                                   
+N  *              b) Configure the SDIO resources to receive the data from the card
+N  *                 according to selected transfer mode (Refer to Step 8, 9 and 10).
+N  *
+N  *              c) Send the selected Read command (refer to step 11).
+N  *                  
+N  *              d) Use the SDIO flags/interrupts to check the transfer status.
+N  *
+N  *              Write Operations
+N  *              ---------------
+N  *              a) First, user has to fill the data structure (pointer to
+N  *                 SDIO_DataInitTypeDef) according to the selected data type to
+N  *                 be received.
+N  *                 The parameters that should be filled are:
+N  *                   - Data TimeOut
+N  *                   - Data Length
+N  *                   - Data Block size
+N  *                   - Data Transfer direction:  should be to card (To CARD)
+N  *                   - Data Transfer mode
+N  *                   - DPSM Status (Enable or Disable)
+N  *
+N  *              b) Configure the SDIO resources to send the data to the card
+N  *                 according to selected transfer mode (Refer to Step 8, 9 and 10).
+N  *                   
+N  *              c) Send the selected Write command (refer to step 11).
+N  *                  
+N  *              d) Use the SDIO flags/interrupts to check the transfer status.
+N  *
+N  *
+N  *  @endverbatim
+N  *
+N  *
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_sdio.c" 155 28 cannot open source input file "stm32f2xx_sdio.h": No such file or directory
+N#include "stm32f2xx_sdio.h"

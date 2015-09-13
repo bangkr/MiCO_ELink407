@@ -1,0 +1,619 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\crt0_KEIL.c"
+N/**
+N******************************************************************************
+N* @file    crt0_IAR.h 
+N* @author  William Xu
+N* @version V1.0.0
+N* @date    16-Sep-2014
+N* @brief   __low_level_init called by IAR before main.
+N******************************************************************************
+N*
+N*  The MIT License
+N*  Copyright (c) 2014 MXCHIP Inc.
+N*
+N*  Permission is hereby granted, free of charge, to any person obtaining a copy 
+N*  of this software and associated documentation files (the "Software"), to deal
+N*  in the Software without restriction, including without limitation the rights 
+N*  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+N*  copies of the Software, and to permit persons to whom the Software is furnished
+N*  to do so, subject to the following conditions:
+N*
+N*  The above copyright notice and this permission notice shall be included in
+N*  all copies or substantial portions of the Software.
+N*
+N*  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+N*  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+N*  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+N*  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+N*  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR 
+N*  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+N******************************************************************************
+N*/
+N
+N#include "platform.h"
+L 1 "..\..\..\Platform\EMW3162\platform.h" 1
+N/**
+N******************************************************************************
+N* @file    platform.h
+N* @author  William Xu
+N* @version V1.0.0
+N* @date    05-May-2014
+N* @brief   This file provides all MICO Peripherals defined for current platform.
+N******************************************************************************
+N*
+N*  The MIT License
+N*  Copyright (c) 2014 MXCHIP Inc.
+N*
+N*  Permission is hereby granted, free of charge, to any person obtaining a copy 
+N*  of this software and associated documentation files (the "Software"), to deal
+N*  in the Software without restriction, including without limitation the rights 
+N*  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+N*  copies of the Software, and to permit persons to whom the Software is furnished
+N*  to do so, subject to the following conditions:
+N*
+N*  The above copyright notice and this permission notice shall be included in
+N*  all copies or substantial portions of the Software.
+N*
+N*  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+N*  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+N*  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+N*  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+N*  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR 
+N*  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+N******************************************************************************
+N*/ 
+N
+N#include "platform_common_config.h"
+L 1 "..\..\..\Platform\EMW3162\platform_common_config.h" 1
+N/**
+N******************************************************************************
+N* @file    platform_common_config.h
+N* @author  William Xu
+N* @version V1.0.0
+N* @date    05-May-2014
+N* @brief   This file provides common configuration for current platform.
+N******************************************************************************
+N*
+N*  The MIT License
+N*  Copyright (c) 2014 MXCHIP Inc.
+N*
+N*  Permission is hereby granted, free of charge, to any person obtaining a copy 
+N*  of this software and associated documentation files (the "Software"), to deal
+N*  in the Software without restriction, including without limitation the rights 
+N*  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+N*  copies of the Software, and to permit persons to whom the Software is furnished
+N*  to do so, subject to the following conditions:
+N*
+N*  The above copyright notice and this permission notice shall be included in
+N*  all copies or substantial portions of the Software.
+N*
+N*  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+N*  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+N*  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+N*  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+N*  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR 
+N*  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+N******************************************************************************
+N*/ 
+N#ifndef __PLATFORM_COMMON_CONFIG_H__
+N#define __PLATFORM_COMMON_CONFIG_H__
+N#pragma once
+N
+N/******************************************************
+N*                      Macros
+N******************************************************/
+N
+N/******************************************************
+N*                    Constants
+N******************************************************/
+N
+N/* MICO RTOS tick rate in Hz */
+N#define MICO_DEFAULT_TICK_RATE_HZ                   (1000) 
+N
+N/************************************************************************
+N * Uncomment to disable watchdog. For debugging only */
+N//#define MICO_DISABLE_WATCHDOG
+N
+N/************************************************************************
+N * Uncomment to disable standard IO, i.e. printf(), etc. */
+N//#define MICO_DISABLE_STDIO
+N
+N/************************************************************************
+N * Uncomment to disable MCU powersave API functions */
+N//#define MICO_DISABLE_MCU_POWERSAVE
+N
+N/************************************************************************
+N * Uncomment to enable MCU real time clock */
+N#define MICO_ENABLE_MCU_RTC
+N
+N
+N
+N#define HSE_SOURCE              RCC_HSE_ON               /* Use external crystal                 */
+N#define AHB_CLOCK_DIVIDER       RCC_SYSCLK_Div1          /* AHB clock = System clock             */
+N#define APB1_CLOCK_DIVIDER      RCC_HCLK_Div4            /* APB1 clock = AHB clock / 4           */
+N#define APB2_CLOCK_DIVIDER      RCC_HCLK_Div2            /* APB2 clock = AHB clock / 2           */
+N#define PLL_SOURCE              RCC_PLLSource_HSE        /* PLL source = external crystal        */
+N#define PLL_M_CONSTANT          26                       /* PLLM = 26                            */
+N#define PLL_N_CONSTANT          240                      /* PLLN = 240                           */
+N#define PLL_P_CONSTANT          2                        /* PLLP = 2                             */
+N#define PPL_Q_CONSTANT          5                        /* PLLQ = 5                             */
+N#define SYSTEM_CLOCK_SOURCE     RCC_SYSCLKSource_PLLCLK  /* System clock source = PLL clock      */
+N#define SYSTICK_CLOCK_SOURCE    SysTick_CLKSource_HCLK   /* SysTick clock source = AHB clock     */
+N#define INT_FLASH_WAIT_STATE    FLASH_Latency_3          /* Internal flash wait state = 3 cycles */
+N
+N#define SDIO_OOB_IRQ_BANK       GPIOB
+N#define SDIO_CLK_BANK           GPIOC
+N#define SDIO_CMD_BANK           GPIOD
+N#define SDIO_D0_BANK            GPIOC
+N#define SDIO_D1_BANK            GPIOC
+N#define SDIO_D2_BANK            GPIOC
+N#define SDIO_D3_BANK            GPIOC
+N#define SDIO_OOB_IRQ_BANK_CLK   RCC_AHB1Periph_GPIOB
+N#define SDIO_CLK_BANK_CLK       RCC_AHB1Periph_GPIOC
+N#define SDIO_CMD_BANK_CLK       RCC_AHB1Periph_GPIOD
+N#define SDIO_D0_BANK_CLK        RCC_AHB1Periph_GPIOC
+N#define SDIO_D1_BANK_CLK        RCC_AHB1Periph_GPIOC
+N#define SDIO_D2_BANK_CLK        RCC_AHB1Periph_GPIOC
+N#define SDIO_D3_BANK_CLK        RCC_AHB1Periph_GPIOC
+N#define SDIO_OOB_IRQ_PIN        13
+N#define SDIO_CLK_PIN            12
+N#define SDIO_CMD_PIN            2
+N#define SDIO_D0_PIN             8
+N#define SDIO_D1_PIN             9
+N#define SDIO_D2_PIN             10
+N#define SDIO_D3_PIN             11
+N
+N/* These are internal platform connections only */
+Ntypedef enum
+N{
+N  MICO_GPIO_UNUSED = -1,
+N  MICO_GPIO_WLAN_POWERSAVE_CLOCK = 0,
+N  WL_GPIO0,
+N  WL_GPIO1,
+N  WL_REG,
+N  WL_RESET,
+N  MICO_SYS_LED,
+N  MICO_RF_LED,
+N  BOOT_SEL,
+N  MFG_SEL,
+N  EasyLink_BUTTON,
+N  MICO_COMMON_GPIO_MAX,
+N} mico_common_gpio_t;
+N
+N/* How the wlan's powersave clock is connected */
+Ntypedef enum
+N{
+N  MICO_PWM_WLAN_POWERSAVE_CLOCK,
+N  MICO_COMMON_PWM_MAX,
+N} mico_common_pwm_t;
+N
+N/* WLAN Powersave Clock Source
+N * The WLAN sleep clock can be driven from one of two sources:
+N * 1. Timer/PWM (default)
+N *    - With the PWM selected, the STM32 can *NOT* be put into MCU powersave mode or the PWM output will be disabled
+N * 2. MCO (MCU Clock Output). 
+N *    - Change the following directive to MICO_WLAN_POWERSAVE_CLOCK_IS_MCO
+N */
+N#define MICO_WLAN_POWERSAVE_CLOCK_SOURCE MICO_WLAN_POWERSAVE_CLOCK_IS_MCO
+N
+N#define MICO_WLAN_POWERSAVE_CLOCK_IS_NOT_EXIST  0
+N#define MICO_WLAN_POWERSAVE_CLOCK_IS_PWM        1
+N#define MICO_WLAN_POWERSAVE_CLOCK_IS_MCO        2
+N
+N#define WLAN_POWERSAVE_CLOCK_FREQUENCY 32768 /* 32768Hz        */
+N#define WLAN_POWERSAVE_CLOCK_DUTY_CYCLE   50 /* 50% duty-cycle */
+N
+N#define WL_32K_OUT_BANK         GPIOA
+N#define WL_32K_OUT_PIN          8
+N#define WL_32K_OUT_BANK_CLK     RCC_AHB1Periph_GPIOA
+N
+N/* The number of UART interfaces this hardware platform has */
+N#define NUMBER_OF_UART_INTERFACES  2
+N
+N#define UART_FOR_APP     MICO_UART_1
+N#define STDIO_UART       MICO_UART_1
+N#define MFG_TEST         MICO_UART_1
+N#define CLI_UART         MICO_UART_1
+N
+N/* Define the address from where user application will be loaded.
+NNote: the 1st sector 0x08000000-0x08003FFF is reserved for the IAP code */
+N#define INTERNAL_FLASH_START_ADDRESS   (uint32_t)0x08000000
+N#define INTERNAL_FLASH_END_ADDRESS     (uint32_t)0x080FFFFF
+N#define INTERNAL_FLASH_SIZE            (INTERNAL_FLASH_END_ADDRESS - INTERNAL_FLASH_START_ADDRESS + 1)
+N
+N#define MICO_FLASH_FOR_APPLICATION  MICO_INTERNAL_FLASH
+N#define APPLICATION_START_ADDRESS   (uint32_t)0x0800C000
+N#define APPLICATION_END_ADDRESS     (uint32_t)0x0805FFFF
+N#define APPLICATION_FLASH_SIZE      (APPLICATION_END_ADDRESS - APPLICATION_START_ADDRESS + 1)
+N
+N#define MICO_FLASH_FOR_UPDATE       MICO_INTERNAL_FLASH /* Optional */
+N#define UPDATE_START_ADDRESS        (uint32_t)0x08060000  /* Optional */
+N#define UPDATE_END_ADDRESS          (uint32_t)0x080BFFFF  /* Optional */
+N#define UPDATE_FLASH_SIZE           (UPDATE_END_ADDRESS - UPDATE_START_ADDRESS + 1) /* 384k bytes, optional*/
+N
+N#define MICO_FLASH_FOR_BOOT         MICO_INTERNAL_FLASH
+N#define BOOT_START_ADDRESS          (uint32_t)0x08000000 
+N#define BOOT_END_ADDRESS            (uint32_t)0x08003FFF 
+N#define BOOT_FLASH_SIZE             (BOOT_END_ADDRESS - BOOT_START_ADDRESS + 1)
+N
+N#define MICO_FLASH_FOR_DRIVER       MICO_INTERNAL_FLASH
+N#define DRIVER_START_ADDRESS        (uint32_t)0x080C0000 
+N#define DRIVER_END_ADDRESS          (uint32_t)0x080FFFFF 
+N#define DRIVER_FLASH_SIZE           (DRIVER_END_ADDRESS - DRIVER_START_ADDRESS + 1)
+N
+N#define MICO_FLASH_FOR_PARA         MICO_INTERNAL_FLASH
+N#define PARA_START_ADDRESS          (uint32_t)0x08004000 
+N#define PARA_END_ADDRESS            (uint32_t)0x08007FFF
+N#define PARA_FLASH_SIZE             (PARA_END_ADDRESS - PARA_START_ADDRESS + 1)  
+N
+N#define MICO_FLASH_FOR_EX_PARA      MICO_INTERNAL_FLASH
+N#define EX_PARA_START_ADDRESS       (uint32_t)0x08008000 
+N#define EX_PARA_END_ADDRESS         (uint32_t)0x0800BFFF
+N#define EX_PARA_FLASH_SIZE          (EX_PARA_END_ADDRESS - EX_PARA_START_ADDRESS + 1)  
+N
+N/******************************************************
+N*                   Enumerations
+N******************************************************/
+N
+N/******************************************************
+N*                 Type Definitions
+N******************************************************/
+N
+N/******************************************************
+N*                    Structures
+N******************************************************/
+N
+N/******************************************************
+N*                 Global Variables
+N******************************************************/
+N
+N/******************************************************
+N*               Function Declarations
+N******************************************************/
+N#endif
+N
+L 33 "..\..\..\Platform\EMW3162\platform.h" 2
+N
+N#pragma once
+N
+N#ifdef __cplusplus
+Sextern "C"
+S{
+N#endif
+N
+N/******************************************************
+N *                      Macros
+N ******************************************************/
+N
+N/******************************************************
+N *                    Constants
+N ******************************************************/
+N  
+N#define HARDWARE_REVISION   "3162"
+N#define DEFAULT_NAME        "EMW3162 Module"
+N#define MODEL               "EMW3162"
+N
+N   
+N/******************************************************
+N *                   Enumerations
+N ******************************************************/
+N
+N/*
+NEMW3162 on EMB-380-S platform pin definitions ...
+N+-------------------------------------------------------------------------+
+N| Enum ID       |Pin | STM32| Peripheral  |    Board     |   Peripheral   |
+N|               | #  | Port | Available   |  Connection  |     Alias      |
+N|---------------+----+------+-------------+--------------+----------------|
+N| MICO_GPIO_1   | 1  | B  6 | GPIO        |              |                |
+N|               |    |      | TIM4_CH1    |              |                |
+N|               |    |      | CAN2_TX     |              |                |
+N|               |    |      | USART1_TX   |              |                |
+N|               |    |      | I2C1_SCL    |              | MICO_I2C1_SCL  |
+N|               |    |      | CAN2_TX     |              |                |
+N|---------------+----+------+-------------+--------------+----------------|
+N| MICO_GPIO_2   | 2  | B  7 | GPIO        |              |                |
+N|               |    |      | I2C1_SCL    |              | MICO_I2C1_SDA  |
+N|               |    |      | USART1_RX   |              |                |
+N|               |    |      | TIM4_CH2    |              |                |
+N|---------------+----+------+-------------+--------------+----------------|
+N|               | 3  | A  13| SWDIO       |              |                |
+N|---------------+----+------+-------------+--------------+----------------|
+N| MICO_GPIO_4   | 4  | C  7 | USART2_RX   |              | MICO_UART_2_RX |
+N|               |    |      | GPIO        |              |                |
+N|               |    |      | TIM8_CH2    |              |                |
+N|               |    |      | TIM3_CH2    |              |                |
+N|               |    |      | I2S3_MCK    |              |                |
+N|---------------+----+------+-------------+--------------+----------------|
+N| MICO_GPIO_5   | 5  | A  3 | ADC123_IN3  |              | MICO_ADC_1     |
+N|               |    |      | GPIO        |              |                |
+N|               |    |      | TIM2_CH4    |              |                |
+N|               |    |      | TIM5_CH4    |              |                |
+N|               |    |      | TIM9_CH2    |              |                |
+N|               |    |      | UART2_RX    |              |                |
+N|---------------+----+------+-------------+--------------+----------------|
+N| MICO_GPIO_6   | 6  | A  4 | SPI1_NSS    |              | MICO_SPI_1_NSS |
+N|               |    |      | GPIO        |              |                |
+N|               |    |      | SPI3_NSS    |              |                |
+N|               |    |      | I2S3_WS     |              |                |
+N|---------------+----+------+-------------+--------------+----------------|
+N| MICO_GPIO_7   | 7  | B  3 | JTDO        |              |                |
+N|               |    |      | GPIO        |              |                |
+N|               |    |      | I2S3_SCK    |              |                |
+N|               |    |      | TIM2_CH2    |              |                |
+N|               |    |      | SPI1_SCK    |              | MICO_SPI_1_SCK |
+N|               |    |      | SPI3_SCK    |              |                |
+N|---------------+----+------+-------------+--------------+----------------|
+N| MICO_GPIO_8   | 8  | B  4 | NJRST       |              |                |
+N|               |    |      | GPIO        |              |                |
+N|               |    |      | SPI3_MISO   |              |                |
+N|               |    |      | SPI1_MISO   |              | MICO_SPI_1_MISO|
+N|               |    |      | TIM3_CH1    |              |                |
+N|---------------+----+------+-------------+--------------+----------------|
+N| MICO_GPIO_9   | 9  | B  5 | I2C1_SMBA   |              |                |
+N|               |    |      | GPIO        |              |                |
+N|               |    |      | CAN2_RX     |              |                |
+N|               |    |      | SPI1_MOSI   |              |                |
+N|               |    |      | SPI3_MOSI   |              | MICO_SPI_1_MOSI|
+N|               |    |      | TIM3_CH2    |              |                |
+N|---------------+----+------+-------------+--------------+----------------|
+N| MICO_GPIO_10  | 10 | B  8 | GPIO        |              |                |
+N|               |    |      | TIM4_CH3    |              | MICO_PWM_1     |
+N|               |    |      | TIM10_CH1   |              |                |
+N|               |    |      | I2C1_SCL    |              |                |
+N|               |    |      | CAN1_RX     |              |                |
+N|---------------+----+------+-------------+--------------+----------------|
+N| MICO_GPIO_11  | 11 | A  1 | GPIO        |EasyLink_BUTTON |              |
+N|               |    |      | TIM5_CH2    |              |                |
+N|               |    |      | TIM2_CH2    |              |                |
+N|               |    |      | ADC123_IN1  |              |                |
+N|---------------+----+------+-------------+--------------+----------------|
+N| MICO_GPIO_12  | 12 | C  2 | GPIO        |              |                |
+N|               |    |      | ADC123_ IN12|              | MICO_ADC_2     |
+N|---------------+----+------+-------------+--------------+----------------|
+N| MICO_GPIO_13  | 13 | B 14 | GPIO        |              |                |
+N|               |    |      | TIM1_CH2N   |              |                |
+N|               |    |      | TIM12_CH1   |              | MICO_PWM_2     |
+N|---------------+----+------+-------------+--------------+----------------|
+N| MICO_GPIO_14  | 14 | C  6 | GPIO        |              |                |
+N|               |    |      | TIM3_CH1    |              |                |
+N|               |    |      | TIM8_CH1    |              |                |
+N|               |    |      | USART6_TX   |              | MICO_UART_2_TX |
+N|---------------+----+------+-------------+--------------+----------------|
+N|               | 15 | GND  |             |              |                |
+N|---------------+----+------+-------------+--------------+----------------|
+N| MICO_GPIO_16  | 16 | B 1  | GPIO        |  RF_LED      |                |
+N|               |    |      | TIM3_CH4    |              |                |
+N|               |    |      | TIM8_CH3N   |              |                |
+N|               |    |      | TIM1_CH4N   |              |                |
+N|---------------+----+------+-------------+--------------+----------------|
+N|               | 17 |nReset|             |              |                |
+N|---------------+----+------+-------------+--------------+----------------|
+N| MICO_GPIO_18  | 18 | A 15 | GPIO        |              |                |
+N|               |    |      | JTDI        |              |                |
+N+---------------+----+--------------------+--------------+----------------+
+N| MICO_GPIO_19  | 19 | B 11 | GPIO        |              |                |
+N|               |    |      | TIM2_CH4    |              | MICO_PWM_3     |
+N+---------------+----+--------------------+--------------+----------------+
+N| MICO_GPIO_20  | 20 | A 12 | GPIO        |              |                |
+N|               |    |      | USART1_RTS  |              |                |
+N|               |    |      | CAN1_TX     |              |                |
+N|               |    |      | TIM1_ETR    |              |                |
+N|               |    |      | OTG_FS_DP   |              |                |
+N+---------------+----+--------------------+--------------+----------------+
+N| MICO_GPIO_21  | 21 | A 11 | GPIO        |              |                |
+N|               |    |      | USART1_CTS  |              |                |
+N|               |    |      | CAN1_RX     |              |                |
+N|               |    |      | TIM1_CH4    |              |                |
+N|               |    |      | OTG_FS_DM   |              |                |
+N+---------------+----+--------------------+--------------+----------------+
+N| MICO_GPIO_22  | 22 | A  9 | GPIO        |              |                |
+N|               |    |      | USART1_TX   |STDIO_UART_TX |                |
+N|               |    |      | TIM1_CH2    |              |                |
+N+---------------+----+--------------------+--------------+----------------+
+N| MICO_GPIO_23  | 23 | A 10 | GPIO        |              |                |
+N|               |    |      | USART1_RX   |STDIO_UART_RX |                |
+N|               |    |      | TIM1_CH3    |              |                |
+N|               |    |      | OTG_FS_ID   |              |                |
+N+---------------+----+--------------------+--------------+----------------+
+N|               | 24 | VCC  |             |              |                |
+N+---------------+----+--------------------+--------------+----------------+
+N|               | 25 | GND  |             |              |                |
+N+---------------+----+--------------------+--------------+----------------+
+N|               | 26 | NC   |             |              |                |
+N+---------------+----+--------------------+--------------+----------------+
+N|               | 27 | BOOT0|             |              |                |
+N+---------------+----+--------------------+--------------+----------------+
+N|               | 28 | A 14 | JTCK-SWCLK  |              |                |
+N+---------------+----+--------------------+--------------+----------------+
+N| MICO_GPIO_29  | 29 | A  0 | GPIO        |StandBy/WakeUp|                |
+N|               |    |      | TIM2_CH1_ETR|              |                |
+N|               |    |      | TIM5_CH1    |              |                |
+N|               |    |      | TIM8_ETR    |              |                |
+N+---------------+----+--------------------+--------------+----------------+
+N| MICO_GPIO_30  | 30 | B  9 | GPIO        | Status_Sel   |                |
+N|               |    |      | TIM4_CH4    |              |                |
+N|               |    |      | TIM11_CH1   |              |                |
+N|               |    |      | I2C1_SDA    |              |                |
+N|               |    |      | CAN1_TX     |              |                |
+N+---------------+----+--------------------+--------------+----------------+
+N| MICO_SYS_LED  |    | B  0 | GPIO        |              |                |
+N+---------------+----+--------------------+--------------+----------------+
+N
+NNotes
+N1. These mappings are defined in <MICO-SDK>/Platform/BCM943362WCD4/platform.c
+N2. STM32F2xx Datasheet  -> http://www.st.com/web/en/resource/technical/document/datasheet/CD00237391.pdf
+N3. STM32F2xx Ref Manual -> http://www.st.com/web/en/resource/technical/document/reference_manual/CD00225773.pdf
+N*/
+N
+N
+Ntypedef enum
+N{
+N    MICO_GPIO_1 = MICO_COMMON_GPIO_MAX,
+N    MICO_GPIO_2,
+N    //MICO_GPIO_3,
+N    MICO_GPIO_4,
+N    MICO_GPIO_5,
+N    MICO_GPIO_6,
+N    MICO_GPIO_7,
+N    MICO_GPIO_8,
+N    MICO_GPIO_9,
+N    MICO_GPIO_10,
+N    //MICO_GPIO_11,
+N    MICO_GPIO_12,
+N    MICO_GPIO_13,
+N    MICO_GPIO_14,
+N    //MICO_GPIO_15,
+N    //MICO_GPIO_16,
+N    //MICO_GPIO_17,
+N    MICO_GPIO_18,
+N    MICO_GPIO_19,
+N    MICO_GPIO_20,
+N    MICO_GPIO_21,
+N    MICO_GPIO_22,
+N    MICO_GPIO_23,
+N    //MICO_GPIO_24,
+N    //MICO_GPIO_25,
+N    //MICO_GPIO_26,
+N    //MICO_GPIO_27,
+N    //MICO_GPIO_28,
+N    MICO_GPIO_29,
+N    //MICO_GPIO_30,
+N
+N    MICO_GPIO_MAX, /* Denotes the total number of GPIO port aliases. Not a valid GPIO alias */
+N} mico_gpio_t;
+N
+Ntypedef enum
+N{
+N    MICO_SPI_1,
+N    MICO_SPI_MAX, /* Denotes the total number of SPI port aliases. Not a valid SPI alias */
+N} mico_spi_t;
+N
+Ntypedef enum
+N{
+N    MICO_I2C_1,
+N    MICO_I2C_MAX, /* Denotes the total number of I2C port aliases. Not a valid I2C alias */
+N} mico_i2c_t;
+N
+Ntypedef enum
+N{
+N    MICO_PWM_1 = MICO_COMMON_PWM_MAX,
+N    MICO_PWM_2,
+N    MICO_PWM_3,
+N    MICO_PWM_MAX, /* Denotes the total number of PWM port aliases. Not a valid PWM alias */
+N} mico_pwm_t;
+N
+Ntypedef enum
+N{
+N    MICO_ADC_1,
+N    MICO_ADC_2,
+N    MICO_ADC_3,
+N    MICO_ADC_MAX, /* Denotes the total number of ADC port aliases. Not a valid ADC alias */
+N} mico_adc_t;
+N
+Ntypedef enum
+N{
+N    MICO_UART_1,
+N    MICO_UART_2,
+N    MICO_UART_MAX, /* Denotes the total number of UART port aliases. Not a valid UART alias */
+N} mico_uart_t;
+N
+Ntypedef enum
+N{
+N  MICO_SPI_FLASH,
+N  MICO_INTERNAL_FLASH,
+N  MICO_FLASH_MAX,
+N} mico_flash_t;
+N
+N#define STM32_UART_1 MICO_UART_1
+N#define STM32_UART_2 NULL
+N#define STM32_UART_6 MICO_UART_2
+N
+N/* Components connected to external I/Os*/
+N#define Standby_SEL         (MICO_GPIO_29)
+N
+N/* I/O connection <-> Peripheral Connections */
+N#define MICO_I2C_CP         (MICO_I2C_1)
+N
+N#define RestoreDefault_TimeOut          3000  /**< Restore default and start easylink after 
+N                                                   press down EasyLink button for 3 seconds. */
+N
+N#ifdef __cplusplus
+S} /*extern "C" */
+N#endif
+N
+L 33 "..\..\..\Platform\Common\Cortex-M3\crt0_KEIL.c" 2
+N#include "crt0.h"
+L 1 "..\..\..\Platform\Common\Cortex-M3\crt0.h" 1
+N/**
+N******************************************************************************
+N* @file    crt0.h 
+N* @author  William Xu
+N* @version V1.0.0
+N* @date    16-Sep-2014
+N* @brief   This file provides functions called by MICO for initialization.
+N******************************************************************************
+N*
+N*  The MIT License
+N*  Copyright (c) 2014 MXCHIP Inc.
+N*
+N*  Permission is hereby granted, free of charge, to any person obtaining a copy 
+N*  of this software and associated documentation files (the "Software"), to deal
+N*  in the Software without restriction, including without limitation the rights 
+N*  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+N*  copies of the Software, and to permit persons to whom the Software is furnished
+N*  to do so, subject to the following conditions:
+N*
+N*  The above copyright notice and this permission notice shall be included in
+N*  all copies or substantial portions of the Software.
+N*
+N*  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+N*  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+N*  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+N*  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+N*  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR 
+N*  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+N******************************************************************************
+N*/
+N
+N#pragma once
+N
+Nextern int main( void );
+Nextern void init_clocks( void );
+Nextern void init_memory( void );
+Nextern void init_architecture( void );
+Nextern void init_platform( void );
+N
+L 34 "..\..\..\Platform\Common\Cortex-M3\crt0_KEIL.c" 2
+N
+Nextern void* app_hdr_start_addr_loc;
+N#define SCB_VTOR_ADDRESS         ( ( volatile unsigned long* ) 0xE000ED08 )
+N#define APP_HDR_START_ADDR   ((unsigned char*)&app_hdr_start_addr_loc)
+N  
+Nextern unsigned long Image$$ER_IROM1$$Base;
+N
+Nint __low_level_init( void );
+N
+N/* This is the code that gets called on processor reset. To initialize the */
+N/* device. */
+Nint __low_level_init( void )
+N{
+N     extern void init_clocks(void);
+N     extern void init_memory(void);
+N     /* IAR allows init functions in __low_level_init(), but it is run before global
+N      * variables have been initialised, so the following init still needs to be done
+N      * When using GCC, this is done in crt0_GCC.c
+N      */
+N     
+N#ifdef BOOTLOADER  
+N      /* Set the Vector Table base location at 0x20000000 */ 
+N     *SCB_VTOR_ADDRESS = 0x20000000;
+X     *( ( volatile unsigned long* ) 0xE000ED08 ) = 0x20000000;
+N#else
+S     /* Setup the interrupt vectors address */
+S     *SCB_VTOR_ADDRESS = (unsigned long)&Image$$ER_IROM1$$Base;
+S     init_clocks();
+S     init_memory();
+N#endif
+N
+N     return 1; /* return 1 to force memory init */
+N}

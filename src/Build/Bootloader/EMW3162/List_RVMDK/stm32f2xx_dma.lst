@@ -1,0 +1,124 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_dma.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_dma.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N  * @brief   This file provides firmware functions to manage the following 
+N  *          functionalities of the Direct Memory Access controller (DMA):           
+N  *           - Initialization and Configuration
+N  *           - Data Counter
+N  *           - Double Buffer mode configuration and command  
+N  *           - Interrupts and flags management
+N  *           
+N  *  @verbatim
+N  *      
+N  *          ===================================================================      
+N  *                                 How to use this driver
+N  *          =================================================================== 
+N  *          1. Enable The DMA controller clock using RCC_AHB1PeriphResetCmd(RCC_AHB1Periph_DMA1, ENABLE)
+N  *             function for DMA1 or using RCC_AHB1PeriphResetCmd(RCC_AHB1Periph_DMA2, ENABLE)
+N  *             function for DMA2.
+N  *
+N  *          2. Enable and configure the peripheral to be connected to the DMA Stream
+N  *             (except for internal SRAM / FLASH memories: no initialization is 
+N  *             necessary). 
+N  *        
+N  *          3. For a given Stream, program the required configuration through following parameters:   
+N  *             Source and Destination addresses, Transfer Direction, Transfer size, Source and Destination 
+N  *             data formats, Circular or Normal mode, Stream Priority level, Source and Destination 
+N  *             Incrementation mode, FIFO mode and its Threshold (if needed), Burst mode for Source and/or 
+N  *             Destination (if needed) using the DMA_Init() function.
+N  *             To avoid filling un-nesecessary fields, you can call DMA_StructInit() function
+N  *             to initialize a given structure with default values (reset values), the modify
+N  *             only necessary fields (ie. Source and Destination addresses, Transfer size and Data Formats).
+N  *
+N  *          4. Enable the NVIC and the corresponding interrupt(s) using the function 
+N  *             DMA_ITConfig() if you need to use DMA interrupts. 
+N  *
+N  *          5. Optionally, if the Circular mode is enabled, you can use the Double buffer mode by configuring 
+N  *             the second Memory address and the first Memory to be used through the function 
+N  *             DMA_DoubleBufferModeConfig(). Then enable the Double buffer mode through the function
+N  *             DMA_DoubleBufferModeCmd(). These operations must be done before step 6.
+N  *    
+N  *          6. Enable the DMA stream using the DMA_Cmd() function. 
+N  *                
+N  *          7. Activate the needed Stream Request using PPP_DMACmd() function for
+N  *             any PPP peripheral except internal SRAM and FLASH (ie. SPI, USART ...)
+N  *             The function allowing this operation is provided in each PPP peripheral
+N  *             driver (ie. SPI_DMACmd for SPI peripheral).
+N  *             Once the Stream is enabled, it is not possible to modify its configuration
+N  *             unless the stream is stopped and disabled.
+N  *             After enabling the Stream, it is advised to monitor the EN bit status using
+N  *             the function DMA_GetCmdStatus(). In case of configuration errors or bus errors
+N  *             this bit will remain reset and all transfers on this Stream will remain on hold.      
+N  *
+N  *          8. Optionally, you can configure the number of data to be transferred
+N  *             when the Stream is disabled (ie. after each Transfer Complete event
+N  *             or when a Transfer Error occurs) using the function DMA_SetCurrDataCounter().
+N  *             And you can get the number of remaining data to be transferred using 
+N  *             the function DMA_GetCurrDataCounter() at run time (when the DMA Stream is
+N  *             enabled and running).  
+N  *                   
+N  *          9. To control DMA events you can use one of the following 
+N  *              two methods:
+N  *               a- Check on DMA Stream flags using the function DMA_GetFlagStatus().  
+N  *               b- Use DMA interrupts through the function DMA_ITConfig() at initialization
+N  *                  phase and DMA_GetITStatus() function into interrupt routines in
+N  *                  communication phase.  
+N  *              After checking on a flag you should clear it using DMA_ClearFlag()
+N  *              function. And after checking on an interrupt event you should 
+N  *              clear it using DMA_ClearITPendingBit() function.    
+N  *              
+N  *          10. Optionally, if Circular mode and Double Buffer mode are enabled, you can modify
+N  *              the Memory Addresses using the function DMA_MemoryTargetConfig(). Make sure that
+N  *              the Memory Address to be modified is not the one currently in use by DMA Stream.
+N  *              This condition can be monitored using the function DMA_GetCurrentMemoryTarget().
+N  *              
+N  *          11. Optionally, Pause-Resume operations may be performed:
+N  *              The DMA_Cmd() function may be used to perform Pause-Resume operation. When a 
+N  *              transfer is ongoing, calling this function to disable the Stream will cause the 
+N  *              transfer to be paused. All configuration registers and the number of remaining 
+N  *              data will be preserved. When calling again this function to re-enable the Stream, 
+N  *              the transfer will be resumed from the point where it was paused.          
+N  *                 
+N  * @note   Memory-to-Memory transfer is possible by setting the address of the memory into
+N  *         the Peripheral registers. In this mode, Circular mode and Double Buffer mode
+N  *         are not allowed.
+N  *  
+N  * @note   The FIFO is used mainly to reduce bus usage and to allow data packing/unpacking: it is
+N  *         possible to set different Data Sizes for the Peripheral and the Memory (ie. you can set
+N  *         Half-Word data size for the peripheral to access its data register and set Word data size
+N  *         for the Memory to gain in access time. Each two Half-words will be packed and written in
+N  *         a single access to a Word in the Memory).
+N  *    
+N  * @note  When FIFO is disabled, it is not allowed to configure different Data Sizes for Source
+N  *        and Destination. In this case the Peripheral Data Size will be applied to both Source
+N  *        and Destination.               
+N  *
+N  *  @endverbatim
+N  *                                  
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_dma.c" 122 27 cannot open source input file "stm32f2xx_dma.h": No such file or directory
+N#include "stm32f2xx_dma.h"

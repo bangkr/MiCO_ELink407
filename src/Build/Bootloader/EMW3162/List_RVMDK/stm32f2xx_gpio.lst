@@ -1,0 +1,87 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_gpio.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_gpio.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N  * @brief   This file provides firmware functions to manage the following 
+N  *          functionalities of the GPIO peripheral:           
+N  *           - Initialization and Configuration
+N  *           - GPIO Read and Write
+N  *           - GPIO Alternate functions configuration
+N  * 
+N  *  @verbatim
+N  *
+N  *          ===================================================================
+N  *                                 How to use this driver
+N  *          ===================================================================       
+N  *           1. Enable the GPIO AHB clock using the following function
+N  *                RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOx, ENABLE);
+N  *             
+N  *           2. Configure the GPIO pin(s) using GPIO_Init()
+N  *              Four possible configuration are available for each pin:
+N  *                - Input: Floating, Pull-up, Pull-down.
+N  *                - Output: Push-Pull (Pull-up, Pull-down or no Pull)
+N  *                          Open Drain (Pull-up, Pull-down or no Pull).
+N  *                  In output mode, the speed is configurable: 2 MHz, 25 MHz,
+N  *                  50 MHz or 100 MHz.
+N  *                - Alternate Function: Push-Pull (Pull-up, Pull-down or no Pull)
+N  *                                      Open Drain (Pull-up, Pull-down or no Pull).
+N  *                - Analog: required mode when a pin is to be used as ADC channel
+N  *                          or DAC output.
+N  * 
+N  *          3- Peripherals alternate function:
+N  *              - For ADC and DAC, configure the desired pin in analog mode using 
+N  *                  GPIO_InitStruct->GPIO_Mode = GPIO_Mode_AN;
+N  *              - For other peripherals (TIM, USART...):
+N  *                 - Connect the pin to the desired peripherals' Alternate 
+N  *                   Function (AF) using GPIO_PinAFConfig() function
+N  *                 - Configure the desired pin in alternate function mode using
+N  *                   GPIO_InitStruct->GPIO_Mode = GPIO_Mode_AF
+N  *                 - Select the type, pull-up/pull-down and output speed via 
+N  *                   GPIO_PuPd, GPIO_OType and GPIO_Speed members
+N  *                 - Call GPIO_Init() function
+N  *        
+N  *          4. To get the level of a pin configured in input mode use GPIO_ReadInputDataBit()
+N  *          
+N  *          5. To set/reset the level of a pin configured in output mode use
+N  *             GPIO_SetBits()/GPIO_ResetBits()
+N  *               
+N  *          6. During and just after reset, the alternate functions are not 
+N  *             active and the GPIO pins are configured in input floating mode
+N  *             (except JTAG pins).
+N  *
+N  *          7. The LSE oscillator pins OSC32_IN and OSC32_OUT can be used as 
+N  *             general-purpose (PC14 and PC15, respectively) when the LSE
+N  *             oscillator is off. The LSE has priority over the GPIO function.
+N  *
+N  *          8. The HSE oscillator pins OSC_IN/OSC_OUT can be used as 
+N  *             general-purpose PH0 and PH1, respectively, when the HSE 
+N  *             oscillator is off. The HSE has priority over the GPIO function.
+N  *             
+N  *  @endverbatim        
+N  *
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_gpio.c" 85 28 cannot open source input file "stm32f2xx_gpio.h": No such file or directory
+N#include "stm32f2xx_gpio.h"

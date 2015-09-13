@@ -1,0 +1,51 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_syscfg.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_syscfg.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N  * @brief   This file provides firmware functions to manage the SYSCFG peripheral.
+N  *
+N  *  @verbatim
+N  *  
+N  *          ===================================================================
+N  *                                 How to use this driver
+N  *          ===================================================================
+N  *                  
+N  *          This driver provides functions for:
+N  *          
+N  *          1. Remapping the memory accessible in the code area using SYSCFG_MemoryRemapConfig()
+N  *              
+N  *          2. Manage the EXTI lines connection to the GPIOs using SYSCFG_EXTILineConfig()
+N  *            
+N  *          3. Select the ETHERNET media interface (RMII/RII) using SYSCFG_ETH_MediaInterfaceConfig()
+N  *
+N  *  @note  SYSCFG APB clock must be enabled to get write access to SYSCFG registers,
+N  *         using RCC_APB2PeriphClockCmd(RCC_APB2Periph_SYSCFG, ENABLE);
+N  *                 
+N  *  @endverbatim
+N  *      
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_syscfg.c" 49 30 cannot open source input file "stm32f2xx_syscfg.h": No such file or directory
+N#include "stm32f2xx_syscfg.h"

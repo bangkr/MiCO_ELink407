@@ -1,0 +1,266 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_rtc.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_rtc.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N  * @brief   This file provides firmware functions to manage the following 
+N  *          functionalities of the Real-Time Clock (RTC) peripheral:
+N  *           - Initialization
+N  *           - Calendar (Time and Date) configuration
+N  *           - Alarms (Alarm A and Alarm B) configuration
+N  *           - WakeUp Timer configuration
+N  *           - Daylight Saving configuration
+N  *           - Output pin Configuration
+N  *           - Coarse Calibration configuration
+N  *           - TimeStamp configuration
+N  *           - Tampers configuration
+N  *           - Backup Data Registers configuration
+N  *           - RTC Tamper and TimeStamp Pins Selection and Output Type Config configuration
+N  *           - Interrupts and flags management
+N  *
+N  *  @verbatim
+N  *
+N  *          ===================================================================
+N  *                               Backup Domain Operating Condition
+N  *          ===================================================================
+N  *          The real-time clock (RTC), the RTC backup registers, and the backup 
+N  *          SRAM (BKP SRAM) can be powered from the VBAT voltage when the main 
+N  *          VDD supply is powered off.
+N  *          To retain the content of the RTC backup registers, backup SRAM, 
+N  *          and supply the RTC when VDD is turned off, VBAT pin can be connected 
+N  *          to an optional standby voltage supplied by a battery or by another 
+N  *          source.
+N  *
+N  *          To allow the RTC to operate even when the main digital supply (VDD) 
+N  *          is turned off, the VBAT pin powers the following blocks:
+N  *            1 - The RTC
+N  *            2 - The LSE oscillator
+N  *            3 - The backup SRAM when the low power backup regulator is enabled
+N  *            4 - PC13 to PC15 I/Os, plus PI8 I/O (when available)
+N  *
+N  *          When the backup domain is supplied by VDD (analog switch connected 
+N  *          to VDD), the following functions are available:
+N  *            1 - PC14 and PC15 can be used as either GPIO or LSE pins
+N  *            2 - PC13 can be used as a GPIO or as the RTC_AF1 pin
+N  *            3 - PI8 can be used as a GPIO or as the RTC_AF2 pin
+N  *
+N  *          When the backup domain is supplied by VBAT (analog switch connected 
+N  *          to VBAT because VDD is not present), the following functions are available:
+N  *            1 - PC14 and PC15 can be used as LSE pins only
+N  *            2 - PC13 can be used as the RTC_AF1 pin 
+N  *            3 - PI8 can be used as the RTC_AF2 pin
+N  *
+N  *          ===================================================================
+N  *                                    Backup Domain Reset
+N  *          ===================================================================
+N  *          The backup domain reset sets all RTC registers and the RCC_BDCR 
+N  *          register to their reset values. The BKPSRAM is not affected by this
+N  *          reset. The only way of resetting the BKPSRAM is through the Flash 
+N  *          interface by requesting a protection level change from 1 to 0.
+N  *          A backup domain reset is generated when one of the following events
+N  *          occurs:
+N  *            1 - Software reset, triggered by setting the BDRST bit in the 
+N  *                RCC Backup domain control register (RCC_BDCR). You can use the
+N  *                RCC_BackupResetCmd().
+N  *            2 - VDD or VBAT power on, if both supplies have previously been
+N  *                powered off.
+N  *
+N  *          ===================================================================
+N  *                                   Backup Domain Access
+N  *          ===================================================================
+N  *          After reset, the backup domain (RTC registers, RTC backup data 
+N  *          registers and backup SRAM) is protected against possible unwanted 
+N  *          write accesses. 
+N  *          To enable access to the RTC Domain and RTC registers, proceed as follows:
+N  *            - Enable the Power Controller (PWR) APB1 interface clock using the
+N  *              RCC_APB1PeriphClockCmd() function.
+N  *            - Enable access to RTC domain using the PWR_BackupAccessCmd() function.
+N  *            - Select the RTC clock source using the RCC_RTCCLKConfig() function.
+N  *            - Enable RTC Clock using the RCC_RTCCLKCmd() function.
+N  *
+N  *          ===================================================================
+N  *                                   RTC Driver: how to use it
+N  *          ===================================================================
+N  *            - Enable the RTC domain access (see description in the section above)
+N  *            - Configure the RTC Prescaler (Asynchronous and Synchronous) and
+N  *              RTC hour format using the RTC_Init() function.
+N  *
+N  *          Time and Date configuration
+N  *          ===========================
+N  *            - To configure the RTC Calendar (Time and Date) use the RTC_SetTime()
+N  *              and RTC_SetDate() functions.
+N  *            - To read the RTC Calendar, use the RTC_GetTime() and RTC_GetDate()
+N  *              functions.
+N  *            - Use the RTC_DayLightSavingConfig() function to add or sub one
+N  *              hour to the RTC Calendar.    
+N  *
+N  *          Alarm configuration
+N  *          ===================
+N  *            - To configure the RTC Alarm use the RTC_SetAlarm() function.
+N  *            - Enable the selected RTC Alarm using the RTC_AlarmCmd() function
+N  *            - To read the RTC Alarm, use the RTC_GetAlarm() function.
+N  *
+N  *          RTC Wakeup configuration
+N  *          ========================
+N  *            - Configure the RTC Wakeup Clock source use the RTC_WakeUpClockConfig()
+N  *              function.
+N  *            - Configure the RTC WakeUp Counter using the RTC_SetWakeUpCounter() 
+N  *              function  
+N  *            - Enable the RTC WakeUp using the RTC_WakeUpCmd() function  
+N  *            - To read the RTC WakeUp Counter register, use the RTC_GetWakeUpCounter() 
+N  *              function.
+N  *
+N  *          Outputs configuration
+N  *          =====================
+N  *          The RTC has 2 different outputs:
+N  *            - AFO_ALARM: this output is used to manage the RTC Alarm A, Alarm B
+N  *              and WaKeUp signals.          
+N  *              To output the selected RTC signal on RTC_AF1 pin, use the 
+N  *              RTC_OutputConfig() function.                
+N  *            - AFO_CALIB: this output is used to manage the RTC Clock divided 
+N  *              by 64 (512Hz) signal.
+N  *              To output the RTC Clock on RTC_AF1 pin, use the RTC_CalibOutputCmd()
+N  *              function.
+N  *
+N  *          Coarse Calibration configuration
+N  *          =================================
+N  *            - Configure the RTC Coarse Calibration Value and the corresponding
+N  *              sign using the RTC_CoarseCalibConfig() function.
+N  *            - Enable the RTC Coarse Calibration using the RTC_CoarseCalibCmd() 
+N  *              function  
+N  *
+N  *          TimeStamp configuration
+N  *          =======================
+N  *            - Configure the RTC_AF1 trigger and enables the RTC TimeStamp 
+N  *              using the RTC_TimeStampCmd() function.
+N  *            - To read the RTC TimeStamp Time and Date register, use the 
+N  *              RTC_GetTimeStamp() function.
+N  *            - The TAMPER1 alternate function can be mapped either to RTC_AF1(PC13)
+N  *              or RTC_AF2 (PI8) depending on the value of TAMP1INSEL bit in 
+N  *              RTC_TAFCR register. You can use the  RTC_TamperPinSelection()
+N  *              function to select the corresponding pin.     
+N  *
+N  *          Tamper configuration
+N  *          ====================
+N  *            - Configure the RTC Tamper trigger using the RTC_TamperConfig() 
+N  *              function.
+N  *            - Enable the RTC Tamper using the RTC_TamperCmd() function.
+N  *            - The TIMESTAMP alternate function can be mapped to either RTC_AF1 
+N  *              or RTC_AF2 depending on the value of the TSINSEL bit in the 
+N  *              RTC_TAFCR register. You can use the  RTC_TimeStampPinSelection()
+N  *              function to select the corresponding pin.   
+N  *
+N  *          Backup Data Registers configuration
+N  *          ===================================
+N  *            - To write to the RTC Backup Data registers, use the RTC_WriteBackupRegister()
+N  *              function.  
+N  *            - To read the RTC Backup Data registers, use the RTC_ReadBackupRegister()
+N  *              function.
+N  * 
+N  *          ===================================================================
+N  *                                  RTC and low power modes
+N  *          ===================================================================
+N  *           The MCU can be woken up from a low power mode by an RTC alternate 
+N  *           function.
+N  *           The RTC alternate functions are the RTC alarms (Alarm A and Alarm B), 
+N  *           RTC wakeup, RTC tamper event detection and RTC time stamp event detection.
+N  *           These RTC alternate functions can wake up the system from the Stop 
+N  *           and Standby lowpower modes.
+N  *           The system can also wake up from low power modes without depending 
+N  *           on an external interrupt (Auto-wakeup mode), by using the RTC alarm 
+N  *           or the RTC wakeup events.
+N  *           The RTC provides a programmable time base for waking up from the 
+N  *           Stop or Standby mode at regular intervals.
+N  *           Wakeup from STOP and Standby modes is possible only when the RTC 
+N  *           clock source is LSE or LSI.
+N  *
+N  *          ===================================================================
+N  *                            Selection of RTC_AF1 alternate functions
+N  *          ===================================================================
+N  *          The RTC_AF1 pin (PC13) can be used for the following purposes:
+N  *            - AFO_ALARM output
+N  *            - AFO_CALIB output
+N  *            - AFI_TAMPER
+N  *            - AFI_TIMESTAMP
+N  *
+N  * +-------------------------------------------------------------------------------------------------------------+
+N  * |     Pin         |AFO_ALARM |AFO_CALIB |AFI_TAMPER |AFI_TIMESTAMP | TAMP1INSEL |   TSINSEL    |ALARMOUTTYPE  |
+N  * |  configuration  | ENABLED  | ENABLED  |  ENABLED  |   ENABLED    |TAMPER1 pin |TIMESTAMP pin |  AFO_ALARM   |
+N  * |  and function   |          |          |           |              | selection  |  selection   |Configuration |
+N  * |-----------------|----------|----------|-----------|--------------|------------|--------------|--------------|
+N  * |   Alarm out     |          |          |           |              |    Don't   |     Don't    |              |
+N  * |   output OD     |     1    |Don't care|Don't care | Don't care   |    care    |     care     |      0       |
+N  * |-----------------|----------|----------|-----------|--------------|------------|--------------|--------------|
+N  * |   Alarm out     |          |          |           |              |    Don't   |     Don't    |              |
+N  * |   output PP     |     1    |Don't care|Don't care | Don't care   |    care    |     care     |      1       |
+N  * |-----------------|----------|----------|-----------|--------------|------------|--------------|--------------|
+N  * | Calibration out |          |          |           |              |    Don't   |     Don't    |              |
+N  * |   output PP     |     0    |    1     |Don't care | Don't care   |    care    |     care     |  Don't care  |
+N  * |-----------------|----------|----------|-----------|--------------|------------|--------------|--------------|
+N  * |  TAMPER input   |          |          |           |              |            |     Don't    |              |
+N  * |   floating      |     0    |    0     |     1     |      0       |      0     |     care     |  Don't care  |
+N  * |-----------------|----------|----------|-----------|--------------|------------|--------------|--------------|
+N  * |  TIMESTAMP and  |          |          |           |              |            |              |              |
+N  * |  TAMPER input   |     0    |    0     |     1     |      1       |      0     |      0       |  Don't care  |
+N  * |   floating      |          |          |           |              |            |              |              |
+N  * |-----------------|----------|----------|-----------|--------------|------------|--------------|--------------|
+N  * | TIMESTAMP input |          |          |           |              |    Don't   |              |              |
+N  * |    floating     |     0    |    0     |     0     |      1       |    care    |      0       |  Don't care  |
+N  * |-----------------|----------|----------|-----------|--------------|------------|--------------|--------------|
+N  * |  Standard GPIO  |     0    |    0     |     0     |      0       | Don't care |  Don't care  |  Don't care  |
+N  * +-------------------------------------------------------------------------------------------------------------+
+N  *
+N  *
+N  *          ===================================================================
+N  *                            Selection of RTC_AF2 alternate functions
+N  *          ===================================================================
+N  *          The RTC_AF2 pin (PI8) can be used for the following purposes:
+N  *            - AFI_TAMPER
+N  *            - AFI_TIMESTAMP
+N  *
+N  * +---------------------------------------------------------------------------------------+
+N  * |     Pin         |AFI_TAMPER |AFI_TIMESTAMP | TAMP1INSEL |   TSINSEL    |ALARMOUTTYPE  |
+N  * |  configuration  |  ENABLED  |   ENABLED    |TAMPER1 pin |TIMESTAMP pin |  AFO_ALARM   |
+N  * |  and function   |           |              | selection  |  selection   |Configuration |
+N  * |-----------------|-----------|--------------|------------|--------------|--------------|
+N  * |  TAMPER input   |           |              |            |     Don't    |              |
+N  * |   floating      |     1     |      0       |      1     |     care     |  Don't care  |
+N  * |-----------------|-----------|--------------|------------|--------------|--------------|
+N  * |  TIMESTAMP and  |           |              |            |              |              |
+N  * |  TAMPER input   |     1     |      1       |      1     |      1       |  Don't care  |
+N  * |   floating      |           |              |            |              |              |
+N  * |-----------------|-----------|--------------|------------|--------------|--------------|
+N  * | TIMESTAMP input |           |              |    Don't   |              |              |
+N  * |    floating     |     0     |      1       |    care    |      1       |  Don't care  |
+N  * |-----------------|-----------|--------------|------------|--------------|--------------|
+N  * |  Standard GPIO  |     0     |      0       | Don't care |  Don't care  |  Don't care  |
+N  * +---------------------------------------------------------------------------------------+
+N  * 
+N  *
+N  *  @endverbatim
+N  *
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */ 
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_rtc.c" 264 27 cannot open source input file "stm32f2xx_rtc.h": No such file or directory
+N#include "stm32f2xx_rtc.h"

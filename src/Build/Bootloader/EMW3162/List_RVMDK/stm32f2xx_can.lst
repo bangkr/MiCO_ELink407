@@ -1,0 +1,88 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_can.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_can.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N  * @brief   This file provides firmware functions to manage the following 
+N  *          functionalities of the Controller area network (CAN) peripheral:           
+N  *           - Initialization and Configuration 
+N  *           - CAN Frames Transmission 
+N  *           - CAN Frames Reception    
+N  *           - Operation modes switch  
+N  *           - Error management          
+N  *           - Interrupts and flags        
+N  *         
+N  *  @verbatim
+N  *                               
+N  *          ===================================================================      
+N  *                                   How to use this driver
+N  *          ===================================================================
+N                
+N  *          1.  Enable the CAN controller interface clock using 
+N  *                  RCC_APB1PeriphClockCmd(RCC_APB1Periph_CAN1, ENABLE); for CAN1 
+N  *              and RCC_APB1PeriphClockCmd(RCC_APB1Periph_CAN2, ENABLE); for CAN2
+N  *  @note   In case you are using CAN2 only, you have to enable the CAN1 clock.
+N  *     
+N  *          2. CAN pins configuration
+N  *               - Enable the clock for the CAN GPIOs using the following function:
+N  *                   RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOx, ENABLE);   
+N  *               - Connect the involved CAN pins to AF9 using the following function 
+N  *                   GPIO_PinAFConfig(GPIOx, GPIO_PinSourcex, GPIO_AF_CANx); 
+N  *                - Configure these CAN pins in alternate function mode by calling
+N  *                  the function  GPIO_Init();
+N  *    
+N  *          3.  Initialise and configure the CAN using CAN_Init() and 
+N  *               CAN_FilterInit() functions.   
+N  *               
+N  *          4.  Transmit the desired CAN frame using CAN_Transmit() function.
+N  *         
+N  *          5.  Check the transmission of a CAN frame using CAN_TransmitStatus()
+N  *              function.
+N  *               
+N  *          6.  Cancel the transmission of a CAN frame using CAN_CancelTransmit()
+N  *              function.  
+N  *            
+N  *          7.  Receive a CAN frame using CAN_Recieve() function.
+N  *         
+N  *          8.  Release the receive FIFOs using CAN_FIFORelease() function.
+N  *               
+N  *          9. Return the number of pending received frames using 
+N  *              CAN_MessagePending() function.            
+N  *                   
+N  *          10. To control CAN events you can use one of the following two methods:
+N  *               - Check on CAN flags using the CAN_GetFlagStatus() function.  
+N  *               - Use CAN interrupts through the function CAN_ITConfig() at 
+N  *                 initialization phase and CAN_GetITStatus() function into 
+N  *                 interrupt routines to check if the event has occurred or not.
+N  *             After checking on a flag you should clear it using CAN_ClearFlag()
+N  *             function. And after checking on an interrupt event you should 
+N  *             clear it using CAN_ClearITPendingBit() function.            
+N  *               
+N  *              
+N  *  @endverbatim
+N  *         
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_can.c" 86 27 cannot open source input file "stm32f2xx_can.h": No such file or directory
+N#include "stm32f2xx_can.h"

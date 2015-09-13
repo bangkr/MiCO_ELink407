@@ -1,0 +1,15 @@
+..\..\..\build\bootloader\emw3162\obj_rvmdk\ringbufferutils.o: ..\..\..\Library\support\RingBufferUtils.c
+..\..\..\build\bootloader\emw3162\obj_rvmdk\ringbufferutils.o: ..\..\..\Library\support\RingBufferUtils.h
+..\..\..\build\bootloader\emw3162\obj_rvmdk\ringbufferutils.o: ..\..\..\Library\support\Common.h
+..\..\..\build\bootloader\emw3162\obj_rvmdk\ringbufferutils.o: d:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+..\..\..\build\bootloader\emw3162\obj_rvmdk\ringbufferutils.o: d:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h
+..\..\..\build\bootloader\emw3162\obj_rvmdk\ringbufferutils.o: d:\Keil_v5\ARM\ARMCC\bin\..\include\stdlib.h
+..\..\..\build\bootloader\emw3162\obj_rvmdk\ringbufferutils.o: d:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h
+..\..\..\build\bootloader\emw3162\obj_rvmdk\ringbufferutils.o: d:\Keil_v5\ARM\ARMCC\bin\..\include\string.h
+..\..\..\build\bootloader\emw3162\obj_rvmdk\ringbufferutils.o: d:\Keil_v5\ARM\ARMCC\bin\..\include\ctype.h
+..\..\..\build\bootloader\emw3162\obj_rvmdk\ringbufferutils.o: ..\..\..\Library\support\Debug.h
+..\..\..\build\bootloader\emw3162\obj_rvmdk\ringbufferutils.o: ..\..\..\include\MicoRTOS.h
+..\..\..\build\bootloader\emw3162\obj_rvmdk\ringbufferutils.o: ..\..\..\Bootloader\MicoDefaults.h
+..\..\..\build\bootloader\emw3162\obj_rvmdk\ringbufferutils.o: ..\..\..\Platform\EMW3162\platform.h
+..\..\..\build\bootloader\emw3162\obj_rvmdk\ringbufferutils.o: ..\..\..\Platform\EMW3162\platform_common_config.h
+..\..\..\build\bootloader\emw3162\obj_rvmdk\ringbufferutils.o: ..\..\..\Platform\Common\Cortex-M4\platform_assert.h

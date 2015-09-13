@@ -1,0 +1,167 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_cryp.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_cryp.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N  * @brief   This file provides firmware functions to manage the following 
+N  *          functionalities of the  Cryptographic processor (CRYP) peripheral:           
+N  *           - Initialization and Configuration functions
+N  *           - Data treatment functions 
+N  *           - Context swapping functions     
+N  *           - DMA interface function       
+N  *           - Interrupts and flags management       
+N  *
+N  *  @verbatim
+N  *                               
+N  *          ===================================================================      
+N  *                                 How to use this driver
+N  *          =================================================================== 
+N  *          1. Enable the CRYP controller clock using 
+N  *              RCC_AHB2PeriphClockCmd(RCC_AHB2Periph_CRYP, ENABLE); function.
+N  *
+N  *          2. Initialise the CRYP using CRYP_Init(), CRYP_KeyInit() and if 
+N  *             needed CRYP_IVInit(). 
+N  *
+N  *          3. Flush the IN and OUT FIFOs by using CRYP_FIFOFlush() function.
+N  *
+N  *          4. Enable the CRYP controller using the CRYP_Cmd() function. 
+N  *
+N  *          5. If using DMA for Data input and output transfer, 
+N  *             Activate the needed DMA Requests using CRYP_DMACmd() function 
+N  
+N  *          6. If DMA is not used for data transfer, use CRYP_DataIn() and 
+N  *             CRYP_DataOut() functions to enter data to IN FIFO and get result
+N  *             from OUT FIFO.
+N  *
+N  *          7. To control CRYP events you can use one of the following 
+N  *              two methods:
+N  *               - Check on CRYP flags using the CRYP_GetFlagStatus() function.  
+N  *               - Use CRYP interrupts through the function CRYP_ITConfig() at 
+N  *                 initialization phase and CRYP_GetITStatus() function into 
+N  *                 interrupt routines in processing phase.
+N  *       
+N  *          8. Save and restore Cryptographic processor context using  
+N  *             CRYP_SaveContext() and CRYP_RestoreContext() functions.     
+N  *
+N  *
+N  *          ===================================================================  
+N  *                Procedure to perform an encryption or a decryption
+N  *          ===================================================================  
+N  *
+N  *      Initialization
+N  *      ===============  
+N  *     1. Initialize the peripheral using CRYP_Init(), CRYP_KeyInit() and 
+N  *        CRYP_IVInit functions:
+N  *        - Configure the key size (128-, 192- or 256-bit, in the AES only) 
+N  *        - Enter the symmetric key 
+N  *        - Configure the data type
+N  *        - In case of decryption in AES-ECB or AES-CBC, you must prepare 
+N  *          the key: configure the key preparation mode. Then Enable the CRYP 
+N  *          peripheral using CRYP_Cmd() function: the BUSY flag is set. 
+N  *          Wait until BUSY flag is reset : the key is prepared for decryption
+N  *       - Configure the algorithm and chaining (the DES/TDES in ECB/CBC, the 
+N  *          AES in ECB/CBC/CTR) 
+N  *       - Configure the direction (encryption/decryption).
+N  *       - Write the initialization vectors (in CBC or CTR modes only)
+N  *
+N  *    2. Flush the IN and OUT FIFOs using the CRYP_FIFOFlush() function
+N  *
+N  *
+N  *    Basic Processing mode (polling mode) 
+N  *    ====================================  
+N  *    1. Enable the cryptographic processor using CRYP_Cmd() function.
+N  *
+N  *    2. Write the first blocks in the input FIFO (2 to 8 words) using 
+N  *       CRYP_DataIn() function.
+N  *
+N  *    3. Repeat the following sequence until the complete message has been 
+N  *       processed:
+N  *
+N  *       a) Wait for flag CRYP_FLAG_OFNE occurs (using CRYP_GetFlagStatus() 
+N  *          function), then read the OUT-FIFO using CRYP_DataOut() function
+N  *          (1 block or until the FIFO is empty)
+N  *
+N  *       b) Wait for flag CRYP_FLAG_IFNF occurs, (using CRYP_GetFlagStatus() 
+N  *          function then write the IN FIFO using CRYP_DataIn() function 
+N  *          (1 block or until the FIFO is full)
+N  *
+N  *    4. At the end of the processing, CRYP_FLAG_BUSY flag will be reset and 
+N  *        both FIFOs are empty (CRYP_FLAG_IFEM is set and CRYP_FLAG_OFNE is 
+N  *        reset). You can disable the peripheral using CRYP_Cmd() function.
+N  *
+N  *    Interrupts Processing mode 
+N  *    ===========================
+N  *    In this mode, Processing is done when the data are transferred by the 
+N  *    CPU during interrupts.
+N  *
+N  *    1. Enable the interrupts CRYP_IT_INI and CRYP_IT_OUTI using 
+N  *       CRYP_ITConfig() function.
+N  *
+N  *    2. Enable the cryptographic processor using CRYP_Cmd() function.
+N  *
+N  *    3. In the CRYP_IT_INI interrupt handler : load the input message into the 
+N  *       IN FIFO using CRYP_DataIn() function . You can load 2 or 4 words at a 
+N  *       time, or load data until the IN FIFO is full. When the last word of
+N  *       the message has been entered into the IN FIFO, disable the CRYP_IT_INI 
+N  *       interrupt (using CRYP_ITConfig() function).
+N  *
+N  *    4. In the CRYP_IT_OUTI interrupt handler : read the output message from 
+N  *       the OUT FIFO using CRYP_DataOut() function. You can read 1 block (2 or 
+N  *       4 words) at a time or read data until the FIFO is empty.
+N  *       When the last word has been read, INIM=0, BUSY=0 and both FIFOs are 
+N  *       empty (CRYP_FLAG_IFEM is set and CRYP_FLAG_OFNE is reset). 
+N  *       You can disable the CRYP_IT_OUTI interrupt (using CRYP_ITConfig() 
+N  *       function) and you can disable the peripheral using CRYP_Cmd() function.
+N  *
+N  *    DMA Processing mode 
+N  *    ====================
+N  *    In this mode, Processing is done when the DMA is used to transfer the 
+N  *    data from/to the memory.
+N  *
+N  *    1. Configure the DMA controller to transfer the input data from the 
+N  *       memory using DMA_Init() function. 
+N  *       The transfer length is the length of the message. 
+N  *       As message padding is not managed by the peripheral, the message 
+N  *       length must be an entire number of blocks. The data are transferred 
+N  *       in burst mode. The burst length is 4 words in the AES and 2 or 4 
+N  *       words in the DES/TDES. The DMA should be configured to set an 
+N  *       interrupt on transfer completion of the output data to indicate that 
+N  *       the processing is finished. 
+N  *       Refer to DMA peripheral driver for more details.  
+N  *
+N  *    2. Enable the cryptographic processor using CRYP_Cmd() function. 
+N  *       Enable the DMA requests CRYP_DMAReq_DataIN and CRYP_DMAReq_DataOUT 
+N  *       using CRYP_DMACmd() function.
+N  *
+N  *    3. All the transfers and processing are managed by the DMA and the 
+N  *       cryptographic processor. The DMA transfer complete interrupt indicates 
+N  *       that the processing is complete. Both FIFOs are normally empty and 
+N  *       CRYP_FLAG_BUSY flag is reset.
+N  *
+N  *  @endverbatim
+N  *
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_cryp.c" 165 28 cannot open source input file "stm32f2xx_cryp.h": No such file or directory
+N#include "stm32f2xx_cryp.h"

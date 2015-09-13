@@ -1,0 +1,614 @@
+###############################################################################
+#
+# IAR ELF Linker V7.30.3.8024/W32 for ARM                 27/Feb/2015  14:26:38
+# Copyright 2007-2014 IAR Systems AB.
+#
+#    Output file  =  
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\COM.MXCHIP.SPP.out
+#    Map file     =  
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\List\COM.MXCHIP.SPP.map
+#    Command line =  
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\BootloaderEntrance.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\crt0_IAR.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\Getline.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\gpio_irq.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\hardfault.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\menu.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\MicoDriverAdc.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\MicoDriverFlash.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\MicoDriverGpio.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\MicoDriverI2c.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\MicoDriverPwm.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\MicoDriverRng.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\MicoDriverRtc.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\MicoDriverSpi.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\MicoDriverUart.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\misc.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\platform.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\read_wifi_firmware.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\RingBufferUtils.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\rtc.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\startup_stm32f411xe_bootloader_IAR.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stdio_IAR.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_adc.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_can.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_crc.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_cryp.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_cryp_aes.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_cryp_des.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_cryp_tdes.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_dac.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_dbgmcu.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_dcmi.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_dma.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_exti.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_flash.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_fsmc.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_gpio.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_hash.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_hash_md5.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_hash_sha1.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_i2c.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_iwdg.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_platform.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_pwr.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_rcc.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_rng.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_rtc.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_sdio.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_spi.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_syscfg.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_tim.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_usart.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\stm32f4xx_wwdg.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\StringUtils.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\system_stm32f4xx.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\Update_for_OTA.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\wlan_platform.o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj\ymodem.o
+#        --redirect _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall -o
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\COM.MXCHIP.SPP.out
+#        --map
+#        E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\List\COM.MXCHIP.SPP.map
+#        --config
+#        E:\orange\elink407\MICO\Projects\bootloader\EWARM\..\..\..\Platform\Elink407_V150112\bootloaderLinkerForIAR.icf
+#        --semihosting --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = DLMalloc
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"RAM_intvec_start":
+       place at 0x20000000 { section .intvec_RAM };
+"ROM_region":
+       place in [from 0x08000000 to 0x08003fff] { ro };
+"RAM_region":
+       place in [from 0x20000000 to 0x2002ffff] { rw, block CSTACK, block HEAP };
+
+  Section                Kind        Address    Size  Object
+  -------                ----        -------    ----  ------
+"A1":                                           0x40
+  .intvec                ro code  0x08000000    0x40  startup_stm32f411xe_bootloader_IAR.o [1]
+                                - 0x08000040    0x40
+
+"ROM_region":                                 0x3d4e
+  .text                  ro code  0x08000040   0x1c2  lz77_init.o [5]
+  .text                  ro code  0x08000202     0x6  abort.o [3]
+  .text                  ro code  0x08000208    0x14  exit.o [6]
+  .text                  ro code  0x0800021c    0x28  data_init.o [5]
+  .text                  ro code  0x08000244    0x22  fpinit_M.o [4]
+  .text                  ro code  0x08000266    0x22  zero_init3.o [5]
+  .iar.init_table        const    0x08000288    0x48  - Linker created -
+  Veneer                 ro code  0x080002d0     0x8  - Linker created -
+  Veneer                 ro code  0x080002d8     0x8  - Linker created -
+  .text                  ro code  0x080002e0    0x1a  cmain.o [5]
+  .text                  ro code  0x080002fc    0x10  crt0_IAR.o [1]
+  .text                  ro code  0x0800030c     0xc  cstartup_M.o [5]
+  .text                  ro code  0x08000318     0x8  startup_stm32f411xe_bootloader_IAR.o [1]
+  .text                  ro code  0x08000320     0x6  startup_stm32f411xe_bootloader_IAR.o [1]
+  .rodata                const    0x08000326     0x0  zero_init3.o [5]
+  .rodata                const    0x08000326     0x0  lz77_init.o [5]
+  Initializer bytes      ro data  0x08000326    0xe6  <for section .intvec_RAM-1>
+  Initializer bytes      ro data  0x0800040c  0x3982  <for RAM_region s0>
+                                - 0x08003d8e  0x3d4e
+
+"RAM_intvec_start":                            0x198
+  section .intvec_RAM-1           0x20000000   0x198  <Init block>
+    .intvec_RAM          inited   0x20000000   0x198  startup_stm32f411xe_bootloader_IAR.o [1]
+                                - 0x20000198   0x198
+
+"RAM_region":                                 0xc1e8
+  RAM_region s0                   0x20000198  0x4bac  <Init block>
+    .text                inited   0x20000198   0xb70  menu.o [1]
+    .text                inited   0x20000d08    0x24  printf.o [3]
+    .text                inited   0x20000d2c   0x548  ymodem.o [1]
+    .text                inited   0x20001274    0xf8  StringUtils.o [1]
+    .text                inited   0x2000136c     0x6  ABImemclr4.o [5]
+    .text                inited   0x20001372     0xa  xsprout.o [3]
+    .text                inited   0x2000137c   0x488  MicoDriverFlash.o [1]
+    .text                inited   0x20001804    0x76  Getline.o [1]
+    .text                inited   0x2000187c    0x42  strcmp_unaligned.o [5]
+    .text                inited   0x200018c0   0x684  MicoDriverUart.o [1]
+    .text                inited   0x20001f44   0x334  stm32f4xx_platform.o [1]
+    .text                inited   0x20002278   0x4d8  xprintfsmall.o [3]
+    .text                inited   0x20002750    0x10  stdio_IAR.o [1]
+    .text                inited   0x20002760    0x76  ABImemcpy_unaligned.o [5]
+    .text                inited   0x200027d8     0x6  ABImemclr.o [5]
+    .text                inited   0x200027e0    0x66  ABImemset.o [5]
+    .text                inited   0x20002848    0x3a  ABImemset48.o [5]
+    .text                inited   0x20002884   0x282  stm32f4xx_flash.o [1]
+    .text                inited   0x20002b08   0x1f8  stm32f4xx_rcc.o [1]
+    .text                inited   0x20002d00    0xb0  stm32f4xx_gpio.o [1]
+    .text                inited   0x20002db0   0x100  stm32f4xx_usart.o [1]
+    .text                inited   0x20002eb0   0x1c8  stm32f4xx_dma.o [1]
+    .text                inited   0x20003078    0x98  misc.o [1]
+    .text                inited   0x20003110    0x5e  RingBufferUtils.o [1]
+    .text                inited   0x20003170    0x60  stm32f4xx_pwr.o [1]
+    .text                inited   0x200031d0    0x30  wlan_platform.o [1]
+    .text                inited   0x20003200   0x128  MicoDriverRtc.o [1]
+    .text                inited   0x20003328    0x18  strrchr.o [3]
+    .text                inited   0x20003340   0x48a  stm32f4xx_rtc.o [1]
+    .text                inited   0x200037cc    0x10  stm32f4xx_iwdg.o [1]
+    .text                inited   0x200037dc    0x16  strchr.o [5]
+    .text                inited   0x200037f4    0x36  strlen.o [5]
+    .text                inited   0x2000382c    0x58  memchr.o [5]
+    .text                inited   0x20003884   0x148  MicoDriverGpio.o [1]
+    .text                inited   0x200039cc    0x84  platform.o [1]
+    .text                inited   0x20003a50   0x690  Update_for_OTA.o [1]
+    .text                inited   0x200040e0    0x62  memcmp_unaligned.o [5]
+    .data                inited   0x20004144   0x3f8  BootloaderEntrance.o [1]
+    .text                inited   0x2000453c   0x304  hardfault.o [1]
+    .text                inited   0x20004840    0x34  sprintf.o [3]
+    .data                inited   0x20004874   0x188  menu.o [1]
+    .text                inited   0x200049fc   0x10e  gpio_irq.o [1]
+    .rodata              inited   0x20004b0c    0xb0  platform.o [1]
+    .text                inited   0x20004bbc    0x60  BootloaderEntrance.o [1]
+    .text                inited   0x20004c1c    0x16  xprout.o [3]
+    .text                inited   0x20004c32    0x12  startup_stm32f411xe_bootloader_IAR.o [1]
+    .data                inited   0x20004c44    0x10  stm32f4xx_rcc.o [1]
+    .rodata              inited   0x20004c54     0xc  MicoDriverFlash.o [1]
+    Veneer               inited   0x20004c60     0x8  - Linker created -
+    .text                inited   0x20004c68     0xa  cexit.o [5]
+    .data                inited   0x20004c74     0x8  MicoDriverFlash.o [1]
+    .data                inited   0x20004c7c     0x8  MicoDriverRtc.o [1]
+    .text                inited   0x20004c84     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004c88     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004c8c     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004c90     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004c94     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004c98     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004c9c     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004ca0     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004ca4     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004ca8     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004cac     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004cb0     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004cb4     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004cb8     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004cbc     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004cc0     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004cc4     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004cc8     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004ccc     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004cd0     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004cd4     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004cd8     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004cdc     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004ce0     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004ce4     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004ce8     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004cec     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004cf0     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004cf4     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004cf8     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004cfc     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004d00     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004d04     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004d08     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004d0c     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004d10     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004d14     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004d18     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004d1c     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004d20     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004d24     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004d28     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004d2c     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004d30     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004d34     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004d38     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004d3c     0x4  startup_stm32f411xe_bootloader_IAR.o [1]
+    .text                inited   0x20004d40     0x4  exit.o [3]
+  .bss                   zero     0x20004d44  0x6000  Update_for_OTA.o [1]
+  .bss                   zero     0x2000ad44   0x500  menu.o [1]
+  .bss                   zero     0x2000b244    0xc0  gpio_irq.o [1]
+  .bss                   zero     0x2000b304    0x54  stm32f4xx_platform.o [1]
+  .bss                   zero     0x2000b358    0x18  MicoDriverUart.o [1]
+  .bss                   zero     0x2000b370     0xc  Update_for_OTA.o [1]
+  .bss                   zero     0x2000b37c     0x4  stm32f4xx_platform.o [1]
+  CSTACK                          0x2000b380  0x1000  <Block>
+    CSTACK               uninit   0x2000b380  0x1000  <Block tail>
+                                - 0x2000c380  0xc1e8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x663c:
+          0x20004d44  0x663c
+
+Copy/lz77 (__iar_lz77_init3)
+    1 source range, total size 0xe6 (56% of destination):
+          0x08000326    0xe6
+    1 destination range, total size 0x198:
+          0x20000000   0x198
+
+Copy/lz77 (__iar_lz77_init3)
+    1 source range, total size 0x3982 (75% of destination):
+          0x0800040c  0x3982
+    1 destination range, total size 0x4bac:
+          0x20000198  0x4bac
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                                ro code  rw code  ro data  rw data
+    ------                                -------  -------  -------  -------
+E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj: [1]
+    BootloaderEntrance.o                                96      847    1 016
+    Getline.o                                          118       89
+    MicoDriverFlash.o                                1 160      899       20
+    MicoDriverGpio.o                                   328      249
+    MicoDriverRtc.o                                    296      231        8
+    MicoDriverUart.o                                 1 668    1 269       24
+    RingBufferUtils.o                                   94       71
+    StringUtils.o                                      248      189
+    Update_for_OTA.o                                 1 680    1 277   24 588
+    crt0_IAR.o                                 16
+    gpio_irq.o                                         270      205      192
+    hardfault.o                                        772      587
+    menu.o                                           2 928    2 523    1 672
+    misc.o                                             152      116
+    platform.o                                         132      236      176
+    startup_stm32f411xe_bootloader_IAR.o       78      614      386
+    stdio_IAR.o                                         16       12
+    stm32f4xx_dma.o                                    456      346
+    stm32f4xx_flash.o                                  642      490
+    stm32f4xx_gpio.o                                   176      134
+    stm32f4xx_iwdg.o                                    16       14
+    stm32f4xx_platform.o                               820      623       88
+    stm32f4xx_pwr.o                                     96       74
+    stm32f4xx_rcc.o                                    504      396       16
+    stm32f4xx_rtc.o                                  1 162      883
+    stm32f4xx_usart.o                                  256      195
+    wlan_platform.o                                     48       37
+    ymodem.o                                         1 352    1 027
+    ------------------------------------------------------------------------
+    Total:                                     94   16 100   13 405   27 800
+
+command line: [2]
+    ------------------------------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    abort.o                                     6
+    exit.o                                               4        4
+    printf.o                                            36       27
+    sprintf.o                                           52       39
+    strrchr.o                                           24       18
+    xprintfsmall.o                                   1 240      943
+    xprout.o                                            22       16
+    xsprout.o                                           10        7
+    ------------------------------------------------------------------------
+    Total:                                      6    1 388    1 054
+
+m7M_tls.a: [4]
+    fpinit_M.o                                 34
+    ------------------------------------------------------------------------
+    Total:                                     34
+
+rt7M_tl.a: [5]
+    ABImemclr.o                                          6        6
+    ABImemclr4.o                                         6        5
+    ABImemcpy_unaligned.o                              118       90
+    ABImemset.o                                        102       79
+    ABImemset48.o                                       58       45
+    cexit.o                                             10        8
+    cmain.o                                    26
+    cstartup_M.o                               12
+    data_init.o                                40
+    lz77_init.o                               450
+    memchr.o                                            88       69
+    memcmp_unaligned.o                                  98       74
+    strchr.o                                            22       17
+    strcmp_unaligned.o                                  66       52
+    strlen.o                                            54       42
+    zero_init3.o                               34
+    ------------------------------------------------------------------------
+    Total:                                    562      628      487
+
+shb_l.a: [6]
+    exit.o                                     20
+    ------------------------------------------------------------------------
+    Total:                                     20
+
+    Gaps                                        2       22                 6
+    Linker created                             16        8       78    4 096
+----------------------------------------------------------------------------
+    Grand Total:                              734   18 146   15 024   31 902
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+?main                   0x080002e1          Code  Gb  cmain.o [5]
+APBAHBPrescTable        0x20004c44    0x10  Data  Lc  stm32f4xx_rcc.o [1]
+CSTACK$$Base            0x2000b380           --   Gb  - Linker created -
+CSTACK$$Limit           0x2000c380           --   Gb  - Linker created -
+DMA1_Stream5_IRQHandler
+                        0x20001ebb    0x2c  Code  Gb  MicoDriverUart.o [1]
+DMA1_Stream6_IRQHandler
+                        0x20001e4d     0x4  Code  Gb  MicoDriverUart.o [1]
+DMA2_Stream1_IRQHandler
+                        0x20001eed    0x2e  Code  Gb  MicoDriverUart.o [1]
+DMA2_Stream2_IRQHandler
+                        0x20001e8d    0x2e  Code  Gb  MicoDriverUart.o [1]
+DMA2_Stream6_IRQHandler
+                        0x20001e51     0x2  Code  Gb  MicoDriverUart.o [1]
+DMA2_Stream7_IRQHandler
+                        0x20001e17    0x36  Code  Gb  MicoDriverUart.o [1]
+DMA_Cmd                 0x20002fe3    0x12  Code  Gb  stm32f4xx_dma.o [1]
+DMA_DeInit              0x20002eb1    0xe0  Code  Gb  stm32f4xx_dma.o [1]
+DMA_ITConfig            0x20002ff5    0x2c  Code  Gb  stm32f4xx_dma.o [1]
+DMA_Init                0x20002f91    0x52  Code  Gb  stm32f4xx_dma.o [1]
+ERROR_STR               0x200049e8    0x14  Data  Gb  menu.o [1]
+EXTI0_IRQHandler        0x20004afd     0x2  Code  Gb  gpio_irq.o [1]
+EXTI15_10_IRQHandler    0x20004b09     0x2  Code  Gb  gpio_irq.o [1]
+EXTI1_IRQHandler        0x20004aff     0x2  Code  Gb  gpio_irq.o [1]
+EXTI2_IRQHandler        0x20004b01     0x2  Code  Gb  gpio_irq.o [1]
+EXTI3_IRQHandler        0x20004b03     0x2  Code  Gb  gpio_irq.o [1]
+EXTI4_IRQHandler        0x20004b05     0x2  Code  Gb  gpio_irq.o [1]
+EXTI9_5_IRQHandler      0x20004b07     0x2  Code  Gb  gpio_irq.o [1]
+FLASH_ClearFlag         0x20002a6d     0x6  Code  Gb  stm32f4xx_flash.o [1]
+FLASH_EraseSector       0x200028c9    0x68  Code  Gb  stm32f4xx_flash.o [1]
+FLASH_Lock              0x200028bb     0xe  Code  Gb  stm32f4xx_flash.o [1]
+FLASH_PrefetchBufferCmd
+                        0x2000288d    0x16  Code  Gb  stm32f4xx_flash.o [1]
+FLASH_ProgramByte       0x2000296b   0x102  Code  Gb  stm32f4xx_flash.o [1]
+FLASH_ProgramWord       0x20002931    0x3a  Code  Gb  stm32f4xx_flash.o [1]
+FLASH_SetLatency        0x20002885     0x8  Code  Gb  stm32f4xx_flash.o [1]
+FLASH_Unlock            0x200028a3    0x18  Code  Gb  stm32f4xx_flash.o [1]
+FLASH_WaitForLastOperation
+                        0x20002a8d    0x72  Code  Gb  stm32f4xx_flash.o [1]
+FileName                0x2000b144   0x100  Data  Gb  menu.o [1]
+GPIO_Init               0x20002d01    0x72  Code  Gb  stm32f4xx_gpio.o [1]
+GPIO_PinAFConfig        0x20002d89    0x28  Code  Gb  stm32f4xx_gpio.o [1]
+GPIO_ReadInputDataBit   0x20002d73     0xe  Code  Gb  stm32f4xx_gpio.o [1]
+GPIO_ResetBits          0x20002d85     0x4  Code  Gb  stm32f4xx_gpio.o [1]
+GPIO_SetBits            0x20002d81     0x4  Code  Gb  stm32f4xx_gpio.o [1]
+IWDG_ReloadCounter      0x200037cd     0xa  Code  Gb  stm32f4xx_iwdg.o [1]
+InStream_Read           0x08000041    0x22  Code  Lc  lz77_init.o [5]
+Int2Str                 0x20001275    0x38  Code  Gb  StringUtils.o [1]
+LoadInt                 0x20002601    0x4c  Code  Lc  xprintfsmall.o [3]
+MEMMAP                  0x20004874   0x174  Data  Gb  menu.o [1]
+Main_Menu               0x200002d9   0x53c  Code  Gb  menu.o [1]
+MicoFlashErase          0x20001393    0x60  Code  Gb  MicoDriverFlash.o [1]
+MicoFlashFinalize       0x2000145d     0xe  Code  Gb  MicoDriverFlash.o [1]
+MicoFlashInitialize     0x2000137d    0x16  Code  Gb  MicoDriverFlash.o [1]
+MicoFlashRead           0x20001423    0x3a  Code  Gb  MicoDriverFlash.o [1]
+MicoFlashWrite          0x200013f3    0x30  Code  Gb  MicoDriverFlash.o [1]
+MicoGpioInitialize      0x20003885    0x9c  Code  Gb  MicoDriverGpio.o [1]
+MicoGpioOutputHigh      0x20003921    0x2c  Code  Gb  MicoDriverGpio.o [1]
+MicoGpioOutputLow       0x2000394d    0x2c  Code  Gb  MicoDriverGpio.o [1]
+MicoMcuPowerSaveConfig  0x200021a3     0x2  Code  Gb  stm32f4xx_platform.o [1]
+MicoRtcGetTime          0x20003267    0x46  Code  Gb  MicoDriverRtc.o [1]
+MicoRtcInitialize       0x20003201    0x66  Code  Gb  MicoDriverRtc.o [1]
+MicoRtcSetTime          0x200032ad    0x6a  Code  Gb  MicoDriverRtc.o [1]
+MicoShouldEnterBootloader
+                        0x20003a37    0x1a  Code  Gb  platform.o [1]
+MicoShouldEnterMFGMode  0x20003a1d    0x1a  Code  Gb  platform.o [1]
+MicoStdioUartInitialize
+                        0x200018c1     0x6  Code  Gb  MicoDriverUart.o [1]
+MicoSystemReboot        0x2000208b    0x18  Code  Gb  stm32f4xx_platform.o [1]
+MicoSystemStandBy       0x200020a3   0x100  Code  Gb  stm32f4xx_platform.o [1]
+MicoUartRecv            0x20001ca3    0xa6  Code  Gb  MicoDriverUart.o [1]
+MicoUartSend            0x20001c19    0x8a  Code  Gb  MicoDriverUart.o [1]
+NVIC_Init               0x20003083    0x5e  Code  Gb  misc.o [1]
+NVIC_PriorityGroupConfig
+                        0x20003079     0xa  Code  Gb  misc.o [1]
+OutStream_Write         0x08000063    0x40  Code  Lc  lz77_init.o [5]
+PWR_BackupAccessCmd     0x20003171     0x6  Code  Gb  stm32f4xx_pwr.o [1]
+PWR_ClearFlag           0x200031ad     0xc  Code  Gb  stm32f4xx_pwr.o [1]
+PWR_EnterSTANDBYMode    0x2000317d    0x20  Code  Gb  stm32f4xx_pwr.o [1]
+PWR_GetFlagStatus       0x2000319d    0x10  Code  Gb  stm32f4xx_pwr.o [1]
+PWR_WakeUpPinCmd        0x20003177     0x6  Code  Gb  stm32f4xx_pwr.o [1]
+RCC_AHB1PeriphClockCmd  0x20002c61    0x12  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_APB1PeriphClockCmd  0x20002c73    0x12  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x20002c85    0x12  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_ClearFlag           0x20002cb9     0xc  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_GetClocksFreq       0x20002bb3    0x82  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_GetFlagStatus       0x20002c97    0x22  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_GetSYSCLKSource     0x20002b81     0xa  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_HCLKConfig          0x20002b8b     0xa  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_HSEConfig           0x20002b09     0xa  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_LSEConfig           0x20002b3b    0x16  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_PCLK1Config         0x20002b95     0x8  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_PCLK2Config         0x20002ba3     0x8  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_PLLCmd              0x20002b6d     0x6  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_PLLConfig           0x20002b51    0x1c  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_RTCCLKCmd           0x20002c5b     0x6  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_RTCCLKConfig        0x20002c35    0x26  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_SYSCLKConfig        0x20002b73     0xe  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_WaitForHSEStartUp   0x20002b13    0x28  Code  Gb  stm32f4xx_rcc.o [1]
+RTC_AlarmCmd            0x200036c9    0x4a  Code  Gb  stm32f4xx_rtc.o [1]
+RTC_ByteToBcd2          0x200037b1    0x1a  Code  Lc  stm32f4xx_rtc.o [1]
+RTC_ClearFlag           0x2000377d     0x8  Code  Gb  stm32f4xx_rtc.o [1]
+RTC_EnterInitMode       0x200033a3    0x36  Code  Gb  stm32f4xx_rtc.o [1]
+RTC_GetDate             0x2000358d    0x5c  Code  Gb  stm32f4xx_rtc.o [1]
+RTC_GetTime             0x200034ab    0x60  Code  Gb  stm32f4xx_rtc.o [1]
+RTC_ITConfig            0x2000374d    0x30  Code  Gb  stm32f4xx_rtc.o [1]
+RTC_Init                0x20003341    0x62  Code  Gb  stm32f4xx_rtc.o [1]
+RTC_ReadBackupRegister  0x20003733    0x1a  Code  Gb  stm32f4xx_rtc.o [1]
+RTC_SetAlarm            0x200035e9    0xe0  Code  Gb  stm32f4xx_rtc.o [1]
+RTC_SetDate             0x2000350b    0x82  Code  Gb  stm32f4xx_rtc.o [1]
+RTC_SetTime             0x20003421    0x8a  Code  Gb  stm32f4xx_rtc.o [1]
+RTC_WaitForSynchro      0x200033d9    0x36  Code  Gb  stm32f4xx_rtc.o [1]
+RTC_WriteBackupRegister
+                        0x20003719    0x1a  Code  Gb  stm32f4xx_rtc.o [1]
+Region$$Table$$Base     0x08000288           --   Gb  - Linker created -
+Region$$Table$$Limit    0x080002d0           --   Gb  - Linker created -
+SerialDownload          0x2000023f    0x90  Code  Gb  menu.o [1]
+Str2Int                 0x200012ad    0xb4  Code  Gb  StringUtils.o [1]
+SysTick_CLKSourceConfig
+                        0x200030e1    0x14  Code  Gb  misc.o [1]
+SysTick_Handler         0x200021a5     0xc  Code  Gb  stm32f4xx_platform.o [1]
+USART1_IRQHandler       0x20001dd5     0x6  Code  Gb  MicoDriverUart.o [1]
+USART2_IRQHandler       0x20001ddb     0x4  Code  Gb  MicoDriverUart.o [1]
+USART6_IRQHandler       0x20001e11     0x6  Code  Gb  MicoDriverUart.o [1]
+USART_ClearFlag         0x20002ea9     0x2  Code  Gb  stm32f4xx_usart.o [1]
+USART_Cmd               0x20002e55    0x14  Code  Gb  stm32f4xx_usart.o [1]
+USART_DMACmd            0x20002e69    0x10  Code  Gb  stm32f4xx_usart.o [1]
+USART_ITConfig          0x20002e79    0x30  Code  Gb  stm32f4xx_usart.o [1]
+USART_Init              0x20002db1    0x9a  Code  Gb  stm32f4xx_usart.o [1]
+UpdateCRC16             0x20000fdb    0x20  Code  Gb  ymodem.o [1]
+Ymodem_PrepareIntialPacket
+                        0x20000f29    0x64  Code  Gb  ymodem.o [1]
+Ymodem_PreparePacket    0x20000f8d    0x4e  Code  Gb  ymodem.o [1]
+Ymodem_Receive          0x20000d2d   0x1f4  Code  Gb  ymodem.o [1]
+Ymodem_Transmit         0x20000ffb   0x272  Code  Gb  ymodem.o [1]
+_GetSector              0x200015c5    0x9c  Code  Lc  MicoDriverFlash.o [1]
+_LitobSmall             0x2000264d    0xce  Code  Lc  xprintfsmall.o [3]
+_PrintfSmall            0x20002279   0x382  Code  Gb  xprintfsmall.o [3]
+_Prout                  0x20004c1d    0x16  Code  Gb  xprout.o [3]
+_PutcharsSmall          0x2000271b    0x2e  Code  Lc  xprintfsmall.o [3]
+_SProut                 0x20001373     0xa  Code  Gb  xsprout.o [3]
+__aeabi_memclr          0x200027d9          Code  Gb  ABImemclr.o [5]
+__aeabi_memclr4         0x2000136d          Code  Gb  ABImemclr4.o [5]
+__aeabi_memset          0x200027e1          Code  Gb  ABImemset.o [5]
+__aeabi_memset4         0x20002849          Code  Gb  ABImemset48.o [5]
+__aeabi_memset8         0x20002849          Code  Gb  ABImemset48.o [5]
+__cmain                 0x080002e1          Code  Gb  cmain.o [5]
+__exit                  0x08000209    0x14  Code  Gb  exit.o [6]
+__iar_Memchr            0x2000382d          Code  Gb  memchr.o [5]
+__iar_Memset            0x200027e1          Code  Gb  ABImemset.o [5]
+__iar_Memset4_word      0x20002851          Code  Gb  ABImemset48.o [5]
+__iar_Memset8_word      0x20002851          Code  Gb  ABImemset48.o [5]
+__iar_Memset_word       0x200027e9          Code  Gb  ABImemset.o [5]
+__iar_Strchr            0x200037dd          Code  Gb  strchr.o [5]
+__iar_Strrchr           0x20003329    0x18  Code  Gb  strrchr.o [3]
+__iar_data_init3        0x0800021d    0x28  Code  Gb  data_init.o [5]
+__iar_init_vfp          0x08000245          Code  Gb  fpinit_M.o [4]
+__iar_lz77_init3        0x080000a3   0x160  Code  Gb  lz77_init.o [5]
+__iar_program_start     0x0800030d          Code  Gb  cstartup_M.o [5]
+__iar_strcmp            0x2000187d          Code  Gb  strcmp_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy
+                        0x20002761          Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy4
+                        0x20002781          Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy8
+                        0x20002781          Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned_memcmp  0x200040e1          Code  Gb  memcmp_unaligned.o [5]
+__iar_unaligned_strcmp  0x2000187d          Code  Gb  strcmp_unaligned.o [5]
+__iar_zero_init3        0x08000267    0x22  Code  Gb  zero_init3.o [5]
+__jump_to               0x20001f45     0xc  Code  Lc  stm32f4xx_platform.o [1]
+__low_level_init        0x080002fd    0x10  Code  Gb  crt0_IAR.o [1]
+__vector_table          0x08000000          Data  Gb  startup_stm32f411xe_bootloader_IAR.o [1]
+__vector_table_RAM      0x20000000          Data  Gb  startup_stm32f411xe_bootloader_IAR.o [1]
+_call_main              0x080002ed          Code  Gb  cmain.o [5]
+_exit                   0x20004c69          Code  Gb  cexit.o [5]
+_main                   0x080002f7          Code  Gb  cmain.o [5]
+abort                   0x08000203     0x6  Code  Gb  abort.o [3]
+data                    0x20004d44  0x1000  Data  Lc  Update_for_OTA.o [1]
+destEndAddress          0x2000b378     0x4  Data  Lc  Update_for_OTA.o [1]
+destFlashType           0x2000b370     0x1  Data  Lc  Update_for_OTA.o [1]
+destStartAddress        0x2000b374     0x4  Data  Lc  Update_for_OTA.o [1]
+exit                    0x20004d41     0x4  Code  Gb  exit.o [3]
+findCommandPara         0x20000199    0xa6  Code  Gb  menu.o [1]
+flash_name              0x20004c74     0x8  Data  Gb  MicoDriverFlash.o [1]
+getline                 0x20001805    0x76  Code  Gb  Getline.o [1]
+gpio_irq                0x200049fd    0xf0  Code  Gb  gpio_irq.o [1]
+gpio_irq_data           0x2000b244    0xc0  Data  Lc  gpio_irq.o [1]
+gpio_mapping            0x20004b0c    0x54  Data  Gb  platform.o [1]
+hard_fault_handler_c    0x20004557   0x1a6  Code  Gb  hardfault.o [1]
+host_platform_init      0x200031d1    0x30  Code  Gb  wlan_platform.o [1]
+host_platform_power_wifi
+                        0x20003a0d    0x10  Code  Gb  platform.o [1]
+host_platform_reset_wifi
+                        0x200039ff     0xe  Code  Gb  platform.o [1]
+init_architecture       0x2000200b    0x80  Code  Gb  stm32f4xx_platform.o [1]
+init_clocks             0x20001fa1    0x68  Code  Wk  stm32f4xx_platform.o [1]
+init_memory             0x20002009     0x2  Code  Wk  stm32f4xx_platform.o [1]
+init_platform_bootloader
+                        0x200039cd    0x32  Code  Gb  platform.o [1]
+internalFlashByteWrite  0x20001547    0x78  Code  Lc  MicoDriverFlash.o [1]
+internalFlashWrite      0x2000146f    0xd8  Code  Lc  MicoDriverFlash.o [1]
+internal_uart_init      0x200018c7   0x34c  Code  Lc  MicoDriverUart.o [1]
+main                    0x20004bbd    0x3a  Code  Gb  BootloaderEntrance.o [1]
+memchr                  0x2000382d          Code  Gb  memchr.o [5]
+menu                    0x20004144   0x3f8  Data  Gb  BootloaderEntrance.o [1]
+mico_default_time       0x20004c7c     0x8  Data  Gb  MicoDriverRtc.o [1]
+mico_get_time_no_os     0x200021b1     0x6  Code  Gb  stm32f4xx_platform.o [1]
+newData                 0x20005d44  0x1000  Data  Lc  Update_for_OTA.o [1]
+no_os_tick              0x2000b37c     0x4  Data  Lc  stm32f4xx_platform.o [1]
+paraSaveInRam           0x20006d44  0x4000  Data  Lc  Update_for_OTA.o [1]
+platform_uart_receive_bytes
+                        0x20001d4f    0x86  Code  Lc  MicoDriverUart.o [1]
+printf                  0x20000d09    0x24  Code  Gb  printf.o [3]
+putchar                 0x20002751    0x10  Code  Gb  stdio_IAR.o [1]
+ring_buffer_consume     0x2000315b    0x14  Code  Gb  RingBufferUtils.o [1]
+ring_buffer_get_data    0x20003133    0x28  Code  Gb  RingBufferUtils.o [1]
+ring_buffer_init        0x20003111     0xe  Code  Gb  RingBufferUtils.o [1]
+ring_buffer_used_space  0x2000311f     0x6  Code  Gb  RingBufferUtils.o [1]
+sprintf                 0x20004841    0x34  Code  Gb  sprintf.o [3]
+startApplication        0x20001f51    0x50  Code  Gb  stm32f4xx_platform.o [1]
+stdio_hardfault         0x2000453d    0x1a  Code  Gb  hardfault.o [1]
+stdio_rx_buffer         0x2000b308    0x10  Data  Lc  stm32f4xx_platform.o [1]
+stdio_rx_data           0x2000b318    0x40  Data  Lc  stm32f4xx_platform.o [1]
+stdio_uart_config       0x2000226c     0xc  Data  Lc  stm32f4xx_platform.o [1]
+stm32_platform_inited   0x2000b304     0x1  Data  Lc  stm32f4xx_platform.o [1]
+strchr                  0x200037dd          Code  Gb  strchr.o [5]
+strlen                  0x200037f5          Code  Gb  strlen.o [5]
+tab_1024                0x2000ad44   0x400  Data  Gb  menu.o [1]
+uart_interfaces         0x2000b358    0x18  Data  Lc  MicoDriverUart.o [1]
+uart_mapping            0x20004b60    0x5c  Data  Gb  platform.o [1]
+update                  0x20003b11   0x41a  Code  Gb  Update_for_OTA.o [1]
+updateLogCheck          0x20003a51    0xc0  Code  Gb  Update_for_OTA.o [1]
+wiced_gpio_input_get    0x20003987    0x3c  Code  Gb  MicoDriverGpio.o [1]
+
+
+[1] = E:\orange\elink407\MICO\Build\Bootloader\Output\Elink407_V150112\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tls.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+     734 bytes of readonly  code memory
+  18 146 bytes of readwrite code memory
+  15 024 bytes of readonly  data memory
+  31 902 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

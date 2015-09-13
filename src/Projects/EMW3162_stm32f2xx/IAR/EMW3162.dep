@@ -1,0 +1,1689 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2342691456</fileChecksum>
+  <configuration>
+    <name>Bootloader</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>HA</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>SPP_Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\External\Curve25519\curve25519-donna.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\debug.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_tokener.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_object.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\json_util.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\arraylist.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\UartRecv.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\LocalTcpServer.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\SppProtocol.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\linkhash.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\MICOAppEntrance.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\MICOBonjour.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\MICOConfigDelegate.c</file>
+      <file>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\RemoteTcpClient.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\MICOConfig.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\sha224-256.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\sha1.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\sha384-512.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\usha.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\hmac.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_dcmi.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_dma.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_hash_sha1.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_dac.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_fsmc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_can.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_gpio.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_crc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_exti.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_hash.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_i2c.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_syscfg.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_flash.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_adc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_spi.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_iwdg.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_rcc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_pwr.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_hash_md5.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_cryp_tdes.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_rtc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_cryp_aes.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_tim.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_dbgmcu.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_usart.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_sdio.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_rng.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_HAL_Driver\Src\stm32f2xx_hal_hcd.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_HAL_Driver\Src\stm32f2xx_ll_usb.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_cryp.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_cryp_des.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOMfgtest.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOSystemMonitor.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\EMW3162\platform.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\crt0_IAR.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\IAR\stdio_IAR.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOParaStorage.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\EMW1062_Driver\SDIO\wlan_bus.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\EMW1062_Driver\read_wifi_firmware.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\EMW1062_Driver\wlan_platform.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_HAL_Driver\Src\stm32f2xx_hal.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\misc.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\SoftAP\EasyLinkSoftAP.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\WPS\WPS.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOConfigMenu.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOConfigServer.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOEntrance.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\EasyLink\EasyLink.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICONotificationCenter.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICONTPClient.c</file>
+      <file>$PROJ_DIR$\..\..\..\MICO\MICOCli.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\JSON-C\printbuf.c</file>
+      <file>$PROJ_DIR$\..\..\..\External\SHAUtils\hkdf.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\TimeUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverGpio.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverFlash.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverSpi.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverWdg.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\gpio_irq.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverPwm.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\startup_stm32f2xx_IAR.s</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverUart.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\rtc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverAdc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\usbh_conf.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\hardfault.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\system_stm32f2xx.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\HTTPUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverI2c.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\SecurityUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\SHAUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\StringUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_wwdg.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverRng.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverRtc.c</file>
+      <file>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\stm32f2xx_platform.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\AESUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\MDNSUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\RingBufferUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\SocketUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\TLVUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Library\support\URLUtils.c</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Exe\EMW3162.out</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverRng.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverWdg.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverPwm.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\rtc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverSpi.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\hardfault.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_platform.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\RingBufferUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverAdc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\SHAUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\SocketUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\URLUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverFlash.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Exe\EMW3162.bin</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\EMW3162.pbd</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\AESUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MDNSUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\SecurityUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\TimeUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverUart.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\HTTPUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\StringUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\usbh_conf.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverI2c.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverRtc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverGpio.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\TLVUtils.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOConfigDelegate.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOAppEntrance.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\LocalTcpServer.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOBonjour.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\UartRecv.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\RemoteTcpClient.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\linkhash.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\json_tokener.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\arraylist.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\curve25519-donna.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\json_util.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\printbuf.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\hkdf.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\json_object.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\hmac.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\sha1.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\SppProtocol.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\debug.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\crt0_IAR.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\sha224-256.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_can.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stdio_IAR.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_crc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_cryp.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_cryp_aes.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOMfgtest.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_hal.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOConfig.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\usha.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\WPS.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\sha384-512.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\EasyLink.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICONotificationCenter.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOParaStorage.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOCli.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOSystemMonitor.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\platform.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\wlan_platform.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_hal_hcd.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOEntrance.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_ll_usb.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\misc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOConfigServer.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\wlan_bus.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOConfigMenu.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\read_wifi_firmware.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\EasyLinkSoftAP.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_adc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICONTPClient.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_wwdg.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\gpio_irq.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverAdc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverFlash.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\hardfault.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_i2c.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_exti.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_hash.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\system_stm32f2xx.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverGpio.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_cryp_des.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_dbgmcu.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_sdio.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_hash_sha1.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_cryp_tdes.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_dac.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_flash.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_fsmc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_hash_md5.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_iwdg.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_rcc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_rtc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_dma.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_gpio.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_pwr.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_rng.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_syscfg.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_tim.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_spi.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_usart.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_dcmi.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\TLVUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\URLUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\LocalTcpServer.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\RemoteTcpClient.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\AESUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\curve25519-donna.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\RingBufferUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOConfigDelegate.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverUart.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\arraylist.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverSpi.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOBonjour.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\debug.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\rtc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverRng.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\usbh_conf.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverWdg.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MDNSUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_platform.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\SecurityUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\StringUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\TimeUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\SHAUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\HTTPUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\SocketUtils.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverRtc.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\startup_stm32f2xx_IAR.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOAppEntrance.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverPwm.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MicoDriverI2c.o</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\SppProtocol.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\UartRecv.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\linkhash.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\sha1.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\EasyLink.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICONTPClient.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\read_wifi_firmware.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\sha224-256.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOConfig.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\WPS.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOCli.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\platform.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_hal.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stdio_IAR.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\json_tokener.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOMfgtest.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\json_util.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\hmac.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOConfigMenu.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\sha384-512.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOEntrance.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\usha.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOParaStorage.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\json_object.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\printbuf.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOSystemMonitor.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\wlan_bus.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\wlan_platform.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICONotificationCenter.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\hkdf.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\EasyLinkSoftAP.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\MICOConfigServer.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\crt0_IAR.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_crc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_ll_usb.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_cryp.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_dcmi.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_dma.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_adc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_flash.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_hal_hcd.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_can.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_cryp_des.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_fsmc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_cryp_tdes.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_dac.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_dbgmcu.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_cryp_aes.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_exti.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\misc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_gpio.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_rtc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_spi.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_hash.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_sdio.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_hash_md5.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_wwdg.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_pwr.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_hash_sha1.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_rng.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_rcc.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_iwdg.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_syscfg.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_tim.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_usart.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\stm32f2xx_i2c.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\gpio_irq.pbi</file>
+      <file>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Obj\system_stm32f2xx.pbi</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\Curve25519\curve25519-donna.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 215</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 139</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\debug.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 222</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 147</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\json_tokener.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 254</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 137</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\json_object.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 263</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 143</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\json_util.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 256</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 140</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\arraylist.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 219</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 138</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\UartRecv.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 241</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 134</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\LocalTcpServer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 212</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 132</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\SppProtocol.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 240</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 146</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\linkhash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 242</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 136</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\MICOAppEntrance.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 237</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 131</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\MICOBonjour.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 221</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 133</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\MICOConfigDelegate.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 217</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 130</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Demos\COM.MXCHIP.SPP\RemoteTcpClient.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 213</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 135</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\MICOConfig.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 248</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 157</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\sha224-256.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 247</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 149</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\sha1.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 243</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 145</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\sha384-512.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 259</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 160</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\usha.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 261</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 158</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\hmac.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 257</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 144</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_dcmi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 276</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 209</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_dma.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 277</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 201</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_hash_sha1.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 298</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 192</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_dac.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 285</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 194</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_fsmc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 283</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 196</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_can.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 281</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 150</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_gpio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 290</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 202</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_crc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 273</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 152</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_exti.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 288</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 185</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_hash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 293</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 186</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_i2c.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 305</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 184</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_syscfg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 302</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 205</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_flash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 279</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 195</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_adc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 278</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 177</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_spi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 292</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 207</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_iwdg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 301</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 198</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_rcc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 300</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 199</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_pwr.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 297</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 203</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_hash_md5.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 295</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 197</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_cryp_tdes.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 284</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 193</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_rtc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 291</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 200</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_cryp_aes.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 287</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 154</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_tim.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 303</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 206</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_dbgmcu.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 286</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 190</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_usart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 304</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 208</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_sdio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 294</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 191</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_rng.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 299</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 204</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_HAL_Driver\Src\stm32f2xx_hal_hcd.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 280</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 168</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_HAL_Driver\Src\stm32f2xx_ll_usb.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 274</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 170</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_cryp.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 275</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 153</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_cryp_des.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 282</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 189</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOMfgtest.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 255</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 155</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOSystemMonitor.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 265</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 165</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\EMW3162\platform.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 251</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 166</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\crt0_IAR.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 272</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 148</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\IAR\stdio_IAR.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 253</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 151</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOParaStorage.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 262</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 163</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\EMW1062_Driver\SDIO\wlan_bus.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 266</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 173</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\EMW1062_Driver\read_wifi_firmware.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 246</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 175</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\EMW1062_Driver\wlan_platform.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 267</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 167</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_HAL_Driver\Src\stm32f2xx_hal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 252</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 156</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\misc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 289</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 171</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\SoftAP\EasyLinkSoftAP.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 270</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 176</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\WPS\WPS.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 249</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 159</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOConfigMenu.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 258</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 174</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOConfigServer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 271</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 172</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOEntrance.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 260</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 169</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\EasyLink\EasyLink.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 244</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 161</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICONotificationCenter.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 268</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 162</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICONTPClient.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 245</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 178</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\MICO\MICOCli.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 250</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 164</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 102</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\JSON-C\printbuf.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 264</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 141</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\External\SHAUtils\hkdf.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 269</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 142</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\TimeUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 121</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 231</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverGpio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 128</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 188</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverFlash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 182</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverSpi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 107</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 220</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverWdg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 104</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 226</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\gpio_irq.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 306</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 180</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverPwm.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 105</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 238</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\startup_stm32f2xx_IAR.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 236</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverUart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 122</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 218</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\rtc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 106</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 223</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverAdc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 181</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\usbh_conf.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 125</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 225</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\hardfault.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 108</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 183</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\system_stm32f2xx.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 307</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 187</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\HTTPUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 123</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 233</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverI2c.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 126</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 239</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\SecurityUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 120</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 229</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\SHAUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 112</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 232</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\StringUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 124</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 230</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_wwdg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 296</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 179</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverRng.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 103</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 224</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\MicoDriverRtc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 127</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 235</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Platform\Common\Cortex-M3\STM32F2xx\stm32f2xx_platform.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 109</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 228</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\AESUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 118</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 214</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\MDNSUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 119</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 227</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\RingBufferUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 216</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\SocketUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 234</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\TLVUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 129</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 210</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Library\support\URLUtils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 114</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 211</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\Build\EMW3162_stm32f2xx\IAR\SPP_Debug\Exe\EMW3162.out</name>
+      <outputs>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 116</file>
+        </tool>
+      </outputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>WECHAT</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

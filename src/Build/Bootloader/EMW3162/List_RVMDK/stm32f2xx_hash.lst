@@ -1,0 +1,131 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_hash.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_hash.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N  * @brief   This file provides firmware functions to manage the following 
+N  *          functionalities of the HASH / HMAC Processor (HASH) peripheral:           
+N  *           - Initialization and Configuration functions
+N  *           - Message Digest generation functions
+N  *           - context swapping functions   
+N  *           - DMA interface function       
+N  *           - Interrupts and flags management       
+N  *         
+N  *  @verbatim
+N  *                               
+N  *          ===================================================================      
+N  *                                   How to use this driver
+N  *          ===================================================================
+N  *          HASH operation : 
+N  *          ----------------                   
+N  *         1. Enable the HASH controller clock using 
+N  *            RCC_AHB2PeriphClockCmd(RCC_AHB2Periph_HASH, ENABLE) function.
+N  *           
+N  *         2. Initialise the HASH using HASH_Init() function. 
+N  *               
+N  *         3 . Reset the HASH processor core, so that the HASH will be ready 
+N  *             to compute he message digest of a new message by using 
+N  *             HASH_Reset() function.
+N  *
+N  *         4. Enable the HASH controller using the HASH_Cmd() function. 
+N  *                
+N  *         5. if using DMA for Data input transfer, Activate the DMA Request 
+N  *            using HASH_DMACmd() function 
+N  *                    
+N  *         6. if DMA is not used for data transfer, use HASH_DataIn() function 
+N  *            to enter data to IN FIFO.
+N  *             
+N  *          
+N  *         7. Configure the Number of valid bits in last word of the message 
+N  *            using HASH_SetLastWordValidBitsNbr() function.
+N  *             
+N  *         8. if the message length is not an exact multiple of 512 bits, 
+N  *            then the function HASH_StartDigest() must be called to 
+N  *            launch the computation of the final digest.     
+N  *             
+N  *         9. Once computed, the digest can be read using HASH_GetDigest() 
+N  *            function.         
+N  *                   
+N  *        10. To control HASH events you can use one of the following 
+N  *              two methods:
+N  *               a- Check on HASH flags using the HASH_GetFlagStatus() function.  
+N  *               b- Use HASH interrupts through the function HASH_ITConfig() at 
+N  *                  initialization phase and HASH_GetITStatus() function into 
+N  *                  interrupt routines in hashing phase.
+N  *          After checking on a flag you should clear it using HASH_ClearFlag()
+N  *          function. And after checking on an interrupt event you should 
+N  *          clear it using HASH_ClearITPendingBit() function.     
+N  *                     
+N  *        11. Save and restore hash processor context using 
+N  *            HASH_SaveContext() and HASH_RestoreContext() functions.     
+N  *              
+N  *
+N  *            
+N  *          HMAC operation : 
+N  *          ----------------  
+N  *          The HMAC algorithm is used for message authentication, by 
+N  *          irreversibly binding the message being processed to a key chosen 
+N  *          by the user. 
+N  *          For HMAC specifications, refer to "HMAC: keyed-hashing for message 
+N  *          authentication, H. Krawczyk, M. Bellare, R. Canetti, February 1997"
+N  *          
+N  *          Basically, the HMAC algorithm consists of two nested hash operations:
+N  *          HMAC(message) = Hash[((key | pad) XOR 0x5C) | Hash(((key | pad) XOR 0x36) | message)]
+N  *          where:
+N  *          - "pad" is a sequence of zeroes needed to extend the key to the 
+N  *                  length of the underlying hash function data block (that is 
+N  *                  512 bits for both the SHA-1 and MD5 hash algorithms)
+N  *          - "|"   represents the concatenation operator 
+N  *          
+N  *         
+N  *         To compute the HMAC, four different phases are required:
+N  *                    
+N  *         1.  Initialise the HASH using HASH_Init() function to do HMAC 
+N  *             operation. 
+N  *                
+N  *         2.  The key (to be used for the inner hash function) is then given 
+N  *             to the core. This operation follows the same mechanism as the 
+N  *             one used to send the message in the hash operation (that is, 
+N  *             by HASH_DataIn() function and, finally, 
+N  *             HASH_StartDigest() function.
+N  *          
+N  *         3.  Once the last word has been entered and computation has started, 
+N  *             the hash processor elaborates the key. It is then ready to 
+N  *             accept the message text using the same mechanism as the one 
+N  *             used to send the message in the hash operation.
+N  *       
+N  *         4.  After the first hash round, the hash processor returns "ready" 
+N  *             to indicate that it is ready to receive the key to be used for 
+N  *             the outer hash function (normally, this key is the same as the 
+N  *             one used for the inner hash function). When the last word of 
+N  *             the key is entered and computation starts, the HMAC result is 
+N  *             made available using HASH_GetDigest() function.
+N  *               
+N  *              
+N  *  @endverbatim
+N  *         
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_hash.c" 129 28 cannot open source input file "stm32f2xx_hash.h": No such file or directory
+N#include "stm32f2xx_hash.h"

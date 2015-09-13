@@ -1,0 +1,90 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_iwdg.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_iwdg.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N  * @brief   This file provides firmware functions to manage the following 
+N  *          functionalities of the Independent watchdog (IWDG) peripheral:           
+N  *           - Prescaler and Counter configuration
+N  *           - IWDG activation
+N  *           - Flag management
+N  *
+N  *  @verbatim  
+N  *  
+N  *          ===================================================================
+N  *                                     IWDG features
+N  *          ===================================================================
+N  *    
+N  *          The IWDG can be started by either software or hardware (configurable
+N  *          through option byte).
+N  *            
+N  *          The IWDG is clocked by its own dedicated low-speed clock (LSI) and
+N  *          thus stays active even if the main clock fails.
+N  *          Once the IWDG is started, the LSI is forced ON and cannot be disabled
+N  *          (LSI cannot be disabled too), and the counter starts counting down from 
+N  *          the reset value of 0xFFF. When it reaches the end of count value (0x000)
+N  *          a system reset is generated.
+N  *          The IWDG counter should be reloaded at regular intervals to prevent
+N  *          an MCU reset.
+N  *                           
+N  *          The IWDG is implemented in the VDD voltage domain that is still functional
+N  *          in STOP and STANDBY mode (IWDG reset can wake-up from STANDBY).          
+N  *            
+N  *          IWDGRST flag in RCC_CSR register can be used to inform when a IWDG
+N  *          reset occurs.
+N  *            
+N  *          Min-max timeout value @32KHz (LSI): ~125us / ~32.7s
+N  *          The IWDG timeout may vary due to LSI frequency dispersion. STM32F2xx
+N  *          devices provide the capability to measure the LSI frequency (LSI clock
+N  *          connected internally to TIM5 CH4 input capture). The measured value
+N  *          can be used to have an IWDG timeout with an acceptable accuracy. 
+N  *          For more information, please refer to the STM32F2xx Reference manual
+N  *          
+N  *                            
+N  *          ===================================================================
+N  *                                 How to use this driver
+N  *          ===================================================================
+N  *          1. Enable write access to IWDG_PR and IWDG_RLR registers using
+N  *             IWDG_WriteAccessCmd(IWDG_WriteAccess_Enable) function
+N  *               
+N  *          2. Configure the IWDG prescaler using IWDG_SetPrescaler() function
+N  *            
+N  *          3. Configure the IWDG counter value using IWDG_SetReload() function.
+N  *             This value will be loaded in the IWDG counter each time the counter
+N  *             is reloaded, then the IWDG will start counting down from this value.
+N  *            
+N  *          4. Start the IWDG using IWDG_Enable() function, when the IWDG is used
+N  *             in software mode (no need to enable the LSI, it will be enabled
+N  *             by hardware)
+N  *             
+N  *          5. Then the application program must reload the IWDG counter at regular
+N  *             intervals during normal operation to prevent an MCU reset, using
+N  *             IWDG_ReloadCounter() function.      
+N  *          
+N  *  @endverbatim
+N  *    
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_iwdg.c" 88 28 cannot open source input file "stm32f2xx_iwdg.h": No such file or directory
+N#include "stm32f2xx_iwdg.h"

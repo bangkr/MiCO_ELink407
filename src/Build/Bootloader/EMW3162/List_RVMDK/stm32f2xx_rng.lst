@@ -1,0 +1,59 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_rng.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_rng.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N    * @brief This file provides firmware functions to manage the following 
+N  *          functionalities of the Random Number Generator (RNG) peripheral:           
+N  *           - Initialization and Configuration 
+N  *           - Get 32 bit Random number      
+N  *           - Interrupts and flags management       
+N  *         
+N  *  @verbatim
+N  *                               
+N  *          ===================================================================      
+N  *                                   How to use this driver
+N  *          ===================================================================          
+N  *          1. Enable The RNG controller clock using 
+N  *            RCC_AHB2PeriphClockCmd(RCC_AHB2Periph_RNG, ENABLE) function.
+N  *              
+N  *          2. Activate the RNG peripheral using RNG_Cmd() function.
+N  *          
+N  *          3. Wait until the 32 bit Random number Generator contains a valid 
+N  *            random data (using polling/interrupt mode). For more details, 
+N  *            refer to "Interrupts and flags management functions" module 
+N  *            description.
+N  *           
+N  *          4. Get the 32 bit Random number using RNG_GetRandomNumber() function
+N  *          
+N  *          5. To get another 32 bit Random number, go to step 3.       
+N  *
+N  *         
+N  *              
+N  *  @endverbatim
+N  *         
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_rng.c" 57 27 cannot open source input file "stm32f2xx_rng.h": No such file or directory
+N#include "stm32f2xx_rng.h"

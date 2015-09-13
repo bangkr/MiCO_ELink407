@@ -1,0 +1,122 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_tim.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_tim.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N  * @brief   This file provides firmware functions to manage the following 
+N  *          functionalities of the TIM peripheral:
+N  *            - TimeBase management
+N  *            - Output Compare management
+N  *            - Input Capture management
+N  *            - Advanced-control timers (TIM1 and TIM8) specific features  
+N  *            - Interrupts, DMA and flags management
+N  *            - Clocks management
+N  *            - Synchronization management
+N  *            - Specific interface management
+N  *            - Specific remapping management      
+N  *              
+N  *  @verbatim
+N  *  
+N  *          ===================================================================
+N  *                                 How to use this driver
+N  *          ===================================================================
+N  *          This driver provides functions to configure and program the TIM 
+N  *          of all STM32F2xx devices.
+N  *          These functions are split in 9 groups: 
+N  *   
+N  *          1. TIM TimeBase management: this group includes all needed functions 
+N  *             to configure the TM Timebase unit:
+N  *                   - Set/Get Prescaler
+N  *                   - Set/Get Autoreload  
+N  *                   - Counter modes configuration
+N  *                   - Set Clock division  
+N  *                   - Select the One Pulse mode
+N  *                   - Update Request Configuration
+N  *                   - Update Disable Configuration
+N  *                   - Auto-Preload Configuration 
+N  *                   - Enable/Disable the counter     
+N  *                 
+N  *          2. TIM Output Compare management: this group includes all needed 
+N  *             functions to configure the Capture/Compare unit used in Output 
+N  *             compare mode: 
+N  *                   - Configure each channel, independently, in Output Compare mode
+N  *                   - Select the output compare modes
+N  *                   - Select the Polarities of each channel
+N  *                   - Set/Get the Capture/Compare register values
+N  *                   - Select the Output Compare Fast mode 
+N  *                   - Select the Output Compare Forced mode  
+N  *                   - Output Compare-Preload Configuration 
+N  *                   - Clear Output Compare Reference
+N  *                   - Select the OCREF Clear signal
+N  *                   - Enable/Disable the Capture/Compare Channels    
+N  *                   
+N  *          3. TIM Input Capture management: this group includes all needed 
+N  *             functions to configure the Capture/Compare unit used in 
+N  *             Input Capture mode:
+N  *                   - Configure each channel in input capture mode
+N  *                   - Configure Channel1/2 in PWM Input mode
+N  *                   - Set the Input Capture Prescaler
+N  *                   - Get the Capture/Compare values      
+N  *                   
+N  *          4. Advanced-control timers (TIM1 and TIM8) specific features
+N  *                   - Configures the Break input, dead time, Lock level, the OSSI,
+N  *                      the OSSR State and the AOE(automatic output enable)
+N  *                   - Enable/Disable the TIM peripheral Main Outputs
+N  *                   - Select the Commutation event
+N  *                   - Set/Reset the Capture Compare Preload Control bit
+N  *                              
+N  *          5. TIM interrupts, DMA and flags management
+N  *                   - Enable/Disable interrupt sources
+N  *                   - Get flags status
+N  *                   - Clear flags/ Pending bits
+N  *                   - Enable/Disable DMA requests 
+N  *                   - Configure DMA burst mode
+N  *                   - Select CaptureCompare DMA request  
+N  *              
+N  *          6. TIM clocks management: this group includes all needed functions 
+N  *             to configure the clock controller unit:
+N  *                   - Select internal/External clock
+N  *                   - Select the external clock mode: ETR(Mode1/Mode2), TIx or ITRx
+N  *         
+N  *          7. TIM synchronization management: this group includes all needed 
+N  *             functions to configure the Synchronization unit:
+N  *                   - Select Input Trigger  
+N  *                   - Select Output Trigger  
+N  *                   - Select Master Slave Mode 
+N  *                   - ETR Configuration when used as external trigger   
+N  *     
+N  *          8. TIM specific interface management, this group includes all 
+N  *             needed functions to use the specific TIM interface:
+N  *                   - Encoder Interface Configuration
+N  *                   - Select Hall Sensor   
+N  *         
+N  *          9. TIM specific remapping management includes the Remapping 
+N  *             configuration of specific timers               
+N  *   
+N  *  @endverbatim
+N  *    
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_tim.c" 120 27 cannot open source input file "stm32f2xx_tim.h": No such file or directory
+N#include "stm32f2xx_tim.h"

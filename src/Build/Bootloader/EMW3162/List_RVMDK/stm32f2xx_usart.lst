@@ -1,0 +1,93 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_usart.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_usart.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N  * @brief   This file provides firmware functions to manage the following 
+N  *          functionalities of the Universal synchronous asynchronous receiver
+N  *          transmitter (USART):           
+N  *           - Initialization and Configuration
+N  *           - Data transfers
+N  *           - Multi-Processor Communication
+N  *           - LIN mode
+N  *           - Half-duplex mode
+N  *           - Smartcard mode
+N  *           - IrDA mode
+N  *           - DMA transfers management
+N  *           - Interrupts and flags management 
+N  *           
+N  *  @verbatim
+N  *      
+N  *          ===================================================================
+N  *                                 How to use this driver
+N  *          ===================================================================
+N  *          1. Enable peripheral clock using the follwoing functions
+N  *             RCC_APB2PeriphClockCmd(RCC_APB2Periph_USARTx, ENABLE) for USART1 and USART6 
+N  *             RCC_APB1PeriphClockCmd(RCC_APB1Periph_USARTx, ENABLE) for USART2, USART3, UART4 or UART5.
+N  *
+N  *          2.  According to the USART mode, enable the GPIO clocks using 
+N  *              RCC_AHB1PeriphClockCmd() function. (The I/O can be TX, RX, CTS, 
+N  *              or/and SCLK). 
+N  *
+N  *          3. Peripheral's alternate function: 
+N  *                 - Connect the pin to the desired peripherals' Alternate 
+N  *                   Function (AF) using GPIO_PinAFConfig() function
+N  *                 - Configure the desired pin in alternate function by:
+N  *                   GPIO_InitStruct->GPIO_Mode = GPIO_Mode_AF
+N  *                 - Select the type, pull-up/pull-down and output speed via 
+N  *                   GPIO_PuPd, GPIO_OType and GPIO_Speed members
+N  *                 - Call GPIO_Init() function
+N  *        
+N  *          4. Program the Baud Rate, Word Length , Stop Bit, Parity, Hardware 
+N  *             flow control and Mode(Receiver/Transmitter) using the USART_Init()
+N  *             function.
+N  *
+N  *          5. For synchronous mode, enable the clock and program the polarity,
+N  *             phase and last bit using the USART_ClockInit() function.
+N  *
+N  *          5. Enable the NVIC and the corresponding interrupt using the function 
+N  *             USART_ITConfig() if you need to use interrupt mode. 
+N  *
+N  *          6. When using the DMA mode 
+N  *                   - Configure the DMA using DMA_Init() function
+N  *                   - Active the needed channel Request using USART_DMACmd() function
+N  * 
+N  *          7. Enable the USART using the USART_Cmd() function.
+N  * 
+N  *          8. Enable the DMA using the DMA_Cmd() function, when using DMA mode. 
+N  *
+N  *          Refer to Multi-Processor, LIN, half-duplex, Smartcard, IrDA sub-sections
+N  *          for more details
+N  *          
+N  *          In order to reach higher communication baudrates, it is possible to
+N  *          enable the oversampling by 8 mode using the function USART_OverSampling8Cmd().
+N  *          This function should be called after enabling the USART clock (RCC_APBxPeriphClockCmd())
+N  *          and before calling the function USART_Init().
+N  *          
+N  *  @endverbatim
+N  *        
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_usart.c" 91 29 cannot open source input file "stm32f2xx_usart.h": No such file or directory
+N#include "stm32f2xx_usart.h"

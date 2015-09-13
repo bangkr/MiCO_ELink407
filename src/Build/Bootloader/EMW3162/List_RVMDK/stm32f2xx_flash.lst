@@ -1,0 +1,78 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_flash.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_flash.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N  * @brief   This file provides firmware functions to manage the following 
+N  *          functionalities of the FLASH peripheral:
+N  *            - FLASH Interface configuration
+N  *            - FLASH Memory Programming
+N  *            - Option Bytes Programming
+N  *            - Interrupts and flags management
+N  *  
+N  *  @verbatim
+N  *  
+N  *          ===================================================================
+N  *                                 How to use this driver
+N  *          ===================================================================
+N  *                           
+N  *          This driver provides functions to configure and program the FLASH 
+N  *          memory of all STM32F2xx devices.
+N  *          These functions are split in 4 groups:
+N  * 
+N  *           1. FLASH Interface configuration functions: this group includes the
+N  *              management of the following features:
+N  *                    - Set the latency
+N  *                    - Enable/Disable the prefetch buffer
+N  *                    - Enable/Disable the Instruction cache and the Data cache
+N  *                    - Reset the Instruction cache and the Data cache
+N  *  
+N  *           2. FLASH Memory Programming functions: this group includes all needed
+N  *              functions to erase and program the main memory:
+N  *                    - Lock and Unlock the FLASH interface
+N  *                    - Erase function: Erase sector, erase all sectors
+N  *                    - Program functions: byte, half word, word and double word
+N  *  
+N  *           3. Option Bytes Programming functions: this group includes all needed
+N  *              functions to manage the Option Bytes:
+N  *                    - Set/Reset the write protection
+N  *                    - Set the Read protection Level
+N  *                    - Set the BOR level
+N  *                    - Program the user Option Bytes
+N  *                    - Launch the Option Bytes loader
+N  *  
+N  *           4. Interrupts and flags management functions: this group 
+N  *              includes all needed functions to:
+N  *                    - Enable/Disable the FLASH interrupt sources
+N  *                    - Get flags status
+N  *                    - Clear flags
+N  *                    - Get FLASH operation status
+N  *                    - Wait for last FLASH operation
+N  * 
+N  *  @endverbatim
+N  *                      
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_flash.c" 76 29 cannot open source input file "stm32f2xx_flash.h": No such file or directory
+N#include "stm32f2xx_flash.h"

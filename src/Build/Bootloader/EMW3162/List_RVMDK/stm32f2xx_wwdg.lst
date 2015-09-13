@@ -1,0 +1,88 @@
+L 1 "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_wwdg.c"
+N/**
+N  ******************************************************************************
+N  * @file    stm32f2xx_wwdg.c
+N  * @author  MCD Application Team
+N  * @version V1.1.2
+N  * @date    05-March-2012 
+N  * @brief   This file provides firmware functions to manage the following 
+N  *          functionalities of the Window watchdog (WWDG) peripheral:           
+N  *           - Prescaler, Refresh window and Counter configuration
+N  *           - WWDG activation
+N  *           - Interrupts and flags management
+N  *             
+N  *  @verbatim
+N  *    
+N  *          ===================================================================
+N  *                                     WWDG features
+N  *          ===================================================================
+N  *                                        
+N  *          Once enabled the WWDG generates a system reset on expiry of a programmed
+N  *          time period, unless the program refreshes the counter (downcounter) 
+N  *          before to reach 0x3F value (i.e. a reset is generated when the counter
+N  *          value rolls over from 0x40 to 0x3F). 
+N  *          An MCU reset is also generated if the counter value is refreshed
+N  *          before the counter has reached the refresh window value. This 
+N  *          implies that the counter must be refreshed in a limited window.
+N  *            
+N  *          Once enabled the WWDG cannot be disabled except by a system reset.                          
+N  *          
+N  *          WWDGRST flag in RCC_CSR register can be used to inform when a WWDG
+N  *          reset occurs.
+N  *            
+N  *          The WWDG counter input clock is derived from the APB clock divided 
+N  *          by a programmable prescaler.
+N  *              
+N  *          WWDG counter clock = PCLK1 / Prescaler
+N  *          WWDG timeout = (WWDG counter clock) * (counter value)
+N  *                      
+N  *          Min-max timeout value @30 MHz(PCLK1): ~136.5 us / ~69.9 ms
+N  *                            
+N  *          ===================================================================
+N  *                                 How to use this driver
+N  *          =================================================================== 
+N  *          1. Enable WWDG clock using RCC_APB1PeriphClockCmd(RCC_APB1Periph_WWDG, ENABLE) function
+N  *            
+N  *          2. Configure the WWDG prescaler using WWDG_SetPrescaler() function
+N  *                           
+N  *          3. Configure the WWDG refresh window using WWDG_SetWindowValue() function
+N  *            
+N  *          4. Set the WWDG counter value and start it using WWDG_Enable() function.
+N  *             When the WWDG is enabled the counter value should be configured to 
+N  *             a value greater than 0x40 to prevent generating an immediate reset.     
+N  *            
+N  *          5. Optionally you can enable the Early wakeup interrupt which is 
+N  *             generated when the counter reach 0x40.
+N  *             Once enabled this interrupt cannot be disabled except by a system reset.
+N  *                 
+N  *          6. Then the application program must refresh the WWDG counter at regular
+N  *             intervals during normal operation to prevent an MCU reset, using
+N  *             WWDG_SetCounter() function. This operation must occur only when
+N  *             the counter value is lower than the refresh window value, 
+N  *             programmed using WWDG_SetWindowValue().         
+N  *
+N  *  @endverbatim  
+N  *                             
+N  ******************************************************************************
+N  * @attention
+N  *
+N  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+N  *
+N  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+N  * You may not use this file except in compliance with the License.
+N  * You may obtain a copy of the License at:
+N  *
+N  *        http://www.st.com/software_license_agreement_liberty_v2
+N  *
+N  * Unless required by applicable law or agreed to in writing, software 
+N  * distributed under the License is distributed on an "AS IS" BASIS, 
+N  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+N  * See the License for the specific language governing permissions and
+N  * limitations under the License.
+N  *
+N  ******************************************************************************
+N  */
+N
+N/* Includes ------------------------------------------------------------------*/
+C "..\..\..\Platform\Common\Cortex-M3\STM32F2xx\STM32F2xx_Drv\STM32F2xx_StdPeriph_Driver\src\stm32f2xx_wwdg.c" 86 28 cannot open source input file "stm32f2xx_wwdg.h": No such file or directory
+N#include "stm32f2xx_wwdg.h"
